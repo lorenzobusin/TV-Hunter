@@ -1,0 +1,48 @@
+            <div id="pagina-amministratore">
+				<h1> Amministratore </h1>		
+				<p> 
+					Benvenuto nell'area riservata agli amministratori del sito, da qui potrai vedere i commenti che sono stati segnalati 
+					e i messaggi che sono stati spediti dagli utenti.
+				</p>
+
+				<div class= "parte-segnalazioni">
+					<div id="descrizione-tabella-segnalazioni">
+						<strong>Segnalazioni effettuate</strong>: per ogni segnalazione &egrave presente il nome dell'utente che ha segnalato e il commento.
+					</div>	
+				</div>				
+					<table id="tabella-segnalazioni" title="segnalazioni">	
+					<thead>								
+							<tr>
+    							<th scope="col">Nome Utente</th>
+    							<th scope="col">Commento</th>
+    							<th scope="col">Elimina</th>
+    							<th scope="col">Spunta</th>    		
+  							</tr>
+  					</thead>
+					<tbody>
+							<!-- Segnalazioni -->	
+					</tbody>				
+					</table>
+				
+
+				<div id="messaggi">
+					<div id="descrizione-tabella-messaggi">
+						<strong>Messaggi</strong>: per ogni messaggio ricevuto &egrave presente il nome dell'utente che l'ha spedito e il suo contenuto.
+					</div>	
+
+					<table id="tabella-messaggi" title="messaggi">
+					<thead>
+						<tr>
+    						<th scope="col">Nome Utente</th>
+    						<th scope="col">Messaggio</th>
+    						<th scope="col">Risposta</th>
+    						<th scope="col">Elimina</th>
+  						</tr>
+  					</thead>
+  					</tbody>
+  						<!-- Messaggio -->
+  					</tbody>
+					</table>
+				</div>
+   		 	</div>
+            <div id="privacy-content"></div>

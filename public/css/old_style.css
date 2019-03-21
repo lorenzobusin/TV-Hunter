@@ -1,0 +1,206 @@
+body{
+	margin:0;
+}
+
+
+/*Navigator section*/
+
+.nav{
+	position: fixed;
+	overflow: hidden;
+	width: 18em;
+	left: 0;
+	height: 100%;
+	background-color: #2f4858;
+
+	border-right: 2px solid black;
+
+	overflow-y: scroll;
+}
+
+.nav ul{
+	list-style: none;
+	line-height: 2em;
+}
+
+
+.nav ul:after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 50%;
+    margin: 40px;
+    background: black;
+}
+
+.nav li{
+	padding-left: 1.3em; /*Serve per poter inserire l'icona a lato*/
+}
+
+.nav a{
+	color: #aaa;
+}
+
+.nav__logo-container{
+	text-align: center;
+	padding-top: 2em;	
+	padding-bottom: 2em;
+}
+/*Serve specificare img? non posso spostare questa regola in -nav__logo-container ?*/
+.nav__logo-container img{
+	width: 35%;
+	opacity: 0.85;
+}
+
+.nav__bottom-list{
+
+}
+
+.nav__esplora:before{
+	content: url("../img/nav/explore.png");
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.8em; /* same as padding-left set on li */
+  vertical-align: middle;
+}
+
+.nav__profilo:before {
+  content: url("../img/nav/profile_avatar.png");
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.8em; /* same as padding-left set on li */
+  vertical-align: middle;
+}
+
+.nav__preferiti:before{
+	content: url("../img/nav/favourites.png");
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.8em; /* same as padding-left set on li */
+  vertical-align: -5px;
+}
+
+.nav__impostazioni:before{
+	content: url("../img/nav/settings.png");
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.8em; /* same as padding-left set on li */
+  vertical-align: -6px;
+}
+
+.nav__faq:before{
+	content: url("../img/nav/faq.png");
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.8em; /* same as padding-left set on li */
+  vertical-align: -6px;
+}
+
+.nav__supporto:before{
+	content: url("../img/nav/support.png");
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.8em; /* same as padding-left set on li */
+  vertical-align: -6px;
+}
+
+.nav__privacy:before{
+	content: url("../img/nav/privacy.png");
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.8em; /* same as padding-left set on li */
+  vertical-align: -6px;
+}
+
+.nav__restricted{
+
+}
+
+
+.nav__social{
+	background-color: white;
+}
+
+/*Page center*/
+.page-center{
+	margin-left: 18em;
+	background-color: #2f4858;
+}
+
+
+/*Header section*/
+.header{	
+	background: url(../img/peaky_blinders.jpg);
+	background-position-y:-6em; 
+	background-color: #2f4858;
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 0.85;
+	height: 20em;
+
+	display: flex;
+	align-items: center;
+}
+
+.header:hover{
+	opacity: 0.9;
+}
+
+.header-content{
+	width: 15em;
+	margin: 0 auto;
+}
+
+
+.header h1 {
+	font-family: "Times New Roman";
+	font-size:4em;
+	color: white;
+  position: relative;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+
+
+/*Content section
+.content{
+	margin-left: 15em;
+}
+*/
+
+/*Footer section*/
+.footer{
+  background-color: #2f4858;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+}
+
+.footer__nav{
+	width: 50%; /*16.1em;*/
+	margin: 0 auto;
+}
+
+.footer ul{
+	padding-left: 0;	
+	list-style: none;
+	/*margin-left: 7em;*/
+	/*text-align: center;*/
+}
+
+	/*Evito che l'ultimo elemento dell'elenco abbia il padding a dx*/
+.footer ul :last-child{
+	padding-right: 0;
+}
+
+.footer li{
+	display: inline-block;
+	padding-right: 2em;
+}
+
+.footer a{
+	color: white;
+}

@@ -1,0 +1,418 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../css/styleProva.css">
+
+
+
+<link rel="icon" type="image/png" href="../img/favicomatic/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="../img/favicomatic/favicon-16x16.png" sizes="16x16" />
+<link rel="stylesheet" href="">
+</head>
+<body>
+	<!-- Sostituire con tag HTML5 <header>? Vedere pro e contro
+		Contro: XHTML5 non esiste -> in xhtml i tag header e footer non esistono.
+
+	-->
+	<div class="nav" id="nav">
+		<div class="nav__logo-container" id="nav__logo-container">
+			<a href=""> 
+				<img src="../logo/logo_TVhunter.png" alt="logo del sito, riporta alla homepage">		
+			</a>
+		</div>
+		
+		<div class="nav__ricerca">
+			<input type="text" placeholder="Cerca.." onkeyup="showResult(this.value)"	>
+			<div id="livesearch"></div>
+		</div>
+		
+		<ul class="nav__top-list list_no-style	" id="nav__top-list">
+			<li class="nav__esplora"><a href="" title="Esplora">Esplora</a></li>
+			<li class="nav__restricted nav__profilo"><a href="" title="Profilo">Profilo</a></li>
+			<li class="nav__restricted nav__preferiti"><a href="" title="Preferiti">Preferiti</a></li>
+		</ul>
+
+		<ul class="nav__bottom-list list_no-style">
+			<li class="nav__restricted nav__impostazioni"><a href="" title="Impostazioni">Impostazioni</a></li>
+			<li class="nav__faq"><a href=""><acronym title="Frequently Asked Questions">FAQ</acronym></a></li>
+			<li class="nav__supporto"><a href="" title="Supporto">Supporto </a></li>
+			<li class="nav__privacy"><a href="" title="Privacy"><span xml:lang="EN">Privacy</span></a></li>
+			<li class="nav__about"><a href="" title="About"><span xml:lang="EN">About</span></a></li>
+   		</ul>
+
+		<div class="nav__social">
+		</div>
+		<div class="nav__icon">
+			<a href="javascript:void(0);" onclick="myFunction()"><i class=""></i>Pulsante</a> <!-- TODO: aggiungere pulsante icons -->
+		</div>
+
+	</div>
+
+	<div class="page-center">
+		<div class="header">
+			<div class="header-content">
+				<h1>TV Hunter</h1>
+			</div>
+		</div>
+
+		<div class="content">
+			<!-- Esplora content -->
+			<div id="esplora">
+				<section id="nuove-uscite">
+					<!-- Perchè h2? perchè deve esserci solo un h1 nella pagina, idealmente -->
+					<h2>Nuove Uscite</h2> 
+					<!--Elenco delle nuove uscite in miniatura-->
+					<ul class="list-inline list_no-style">
+						<li class="show">
+							<div class="show-min">
+								<a href="show/show_id" title="vai alla pagina della serie">
+									<img src="../img/miniature/adVitam_min.jpg" alt="poster della serie">
+								</a>
+							</div>
+							<div class="show-info">
+								<p class="show-name">
+									<a href="show/show_id">Ad vitam</a></p>
+								<p class="show-consigliati">consigliato da 0 persone</p>
+							</div>
+						</li>
+
+						<li class="show">
+							<div class="show-min">
+								<a href="./show/show_id" title="vai alla pagina della serie">
+									<img src="../img/miniature/heathers_min.jpg" alt="poster della serie">
+								</a>
+							</div>
+							<div class="show-info">
+								<p class="show-name">
+									<a href="show/show_id">Heathers</a>
+								</p>
+								<p class="show-consigliati">consigliato da 0 persone</p>
+							</div>
+						</li>
+
+						<li class="show">
+							<div class="show-min">
+								<a href="./show/show_id" title="vai alla pagina della serie">
+									<img src="../img/miniature/sabrina_min.jpg" alt="poster della serie">
+								</a>
+							</div>
+							<div class="show-info">
+								<p class="show-name">
+									<a href="show/show_id">Sabrina</a>
+								</p>
+								<p class="show-consigliati">consigliato da 0 persone</p>
+							</div>
+						</li>
+
+						<li class="show">
+							<div class="show-min">
+								<a href="./show/show_id" title="vai alla pagina della serie">
+									<img src="../img/miniature/sickOfIt_min.jpg" alt="poster della serie">
+								</a>
+							</div>
+							<div class="show-info">
+								<p class="show-name">
+									<a href="show/show_id">Sick of it</a>
+								</p>
+								<p class="show-consigliati">consigliato da 0 persone</p>
+							</div>
+						</li>
+
+					</ul>
+				</section>
+
+				<section id="drammatiche">
+					<!-- Perchè h2? perchè deve esserci solo un h1 nella pagina, idealmente -->
+					<h2>Drammatiche</h2> 
+					<!--Elenco serie tv in miniatura-->
+					<ul class="list-inline list_no-style">
+						<li class="show">
+							<div class="show-min">
+								<a href="show/show_id" title="vai alla pagina della serie">
+									<img src="../img/miniature/blackMirror_min.jpg" alt="poster della serie">
+								</a>
+							</div>
+							<div class="show-info">
+								<p class="show-name">
+									<a href="show/show_id">Black Mirror</a></p>
+								<p class="show-consigliati">consigliato da 0 persone</p>
+							</div>
+						</li>
+
+						<li class="show">
+							<div class="show-min">
+								<a href="./show/show_id" title="vai alla pagina della serie">
+									<img src="../img/miniature/breakingBad_min.jpg" alt="poster della serie">
+								</a>
+							</div>
+							<div class="show-info">
+								<p class="show-name">
+									<a href="show/show_id">Breaking Bad</a>
+								</p>
+								<p class="show-consigliati">consigliato da 0 persone</p>
+							</div>
+						</li>
+
+						<li class="show">
+							<div class="show-min">
+								<a href="./show/show_id" title="vai alla pagina della serie">
+									<img src="../img/miniature/HTGAWM_min.jpg" alt="poster della serie">
+								</a>
+							</div>
+							<div class="show-info">
+								<p class="show-name">
+									<a href="show/show_id">How to get away with m</a>
+								</p>
+								<p class="show-consigliati">consigliato da 0 persone</p>
+							</div>
+						</li>
+
+						<li class="show">
+							<div class="show-min">
+								<a href="./show/show_id" title="vai alla pagina della serie">
+									<img src="../img/miniature/OITNB_min.jpg" alt="poster della serie">
+								</a>
+							</div>
+							<div class="show-info">
+								<p class="show-name">
+									<a href="show/show_id">Orange is the new black</a>
+								</p>
+								<p class="show-consigliati">consigliato da 0 persone</p>
+							</div>
+						</li>
+
+						<li class="show">
+							<div class="show-min">
+								<a href="./show/show_id" title="vai alla pagina della serie">
+									<img src="../img/miniature/greysAnatomy_min.jpg" alt="poster della serie">
+								</a>
+							</div>
+							<div class="show-info">
+								<p class="show-name">
+									<a href="show/show_id">Grey's anathomy</a>
+								</p>
+								<p class="show-consigliati">consigliato da 0 persone</p>
+							</div>
+						</li>
+
+					</ul>
+				</section>
+
+				<section id="azione">
+					<!-- Perchè h2? perchè deve esserci solo un h1 nella pagina, idealmente -->
+					<h2>Azione</h2> 
+					<!--Elenco serie tv in miniatura-->
+					<ul class="list-inline list_no-style">
+						<li class="show">
+							<div class="show-min">
+								<a href="show-page.html" title="vai alla pagina della serie">
+									<img src="../img/miniature/narcos_min.jpg" alt="poster della serie">
+								</a>
+							</div>
+							<div class="show-info">
+								<p class="show-name">
+									<a href="show-page.html">Narcos</a></p>
+								<p class="show-consigliati">consigliato da 0 persone</p>
+							</div>
+						</li>
+
+						<li class="show">
+							<div class="show-min">
+								<a href="./show/show_id" title="vai alla pagina della serie">
+									<img src="../img/miniature/casaDePapel_min.jpg" alt="poster della serie">
+								</a>
+							</div>
+							<div class="show-info">
+								<p class="show-name">
+									<a href="show/show_id">La casa de papel</a>
+								</p>
+								<p class="show-consigliati">consigliato da 0 persone</p>
+							</div>
+						</li>
+
+						<li class="show">
+							<div class="show-min">
+								<a href="./show/show_id" title="vai alla pagina della serie">
+									<img src="../img/miniature/daredevil_min.jpg" alt="poster della serie">
+								</a>
+							</div>
+							<div class="show-info">
+								<p class="show-name">
+									<a href="show/show_id">Daredevil</a>
+								</p>
+								<p class="show-consigliati">consigliato da 0 persone</p>
+							</div>
+						</li>
+
+						<li class="show">
+							<div class="show-min">
+								<a href="./show/show_id" title="vai alla pagina della serie">
+									<img src="../img/miniature/thePurge_min.jpg" alt="poster della serie">
+								</a>
+							</div>
+							<div class="show-info">
+								<p class="show-name">
+									<a href="show/show_id">The purge</a>
+								</p>
+								<p class="show-consigliati">consigliato da 0 persone</p>
+							</div>
+						</li>
+
+						<li class="show">
+							<div class="show-min">
+								<a href="./show/show_id" title="vai alla pagina della serie">
+									<img src="../img/miniature/limitless_min.jpg" alt="poster della serie">
+								</a>
+							</div>
+							<div class="show-info">
+								<p class="show-name">
+									<a href="show/show_id">Limitless</a>
+								</p>
+								<p class="show-consigliati">consigliato da 0 persone</p>
+							</div>
+						</li>
+
+					</ul>
+				</section>
+
+				<section id="commedia">
+					<!-- Perchè h2? perchè deve esserci solo un h1 nella pagina, idealmente -->
+					<h2>Commedia</h2> 
+					<!--Elenco serie tv in miniatura-->
+					<ul class="list-inline list_no-style">
+						<li class="show">
+							<div class="show-min">
+								<a href="show/show_id" title="vai alla pagina della serie">
+									<img src="../img/miniature/newGirl_min.jpg" alt="poster della serie">
+								</a>
+							</div>
+							<div class="show-info">
+								<p class="show-name">
+									<a href="show/show_id">New girl</a></p>
+								<p class="show-consigliati">consigliato da 0 persone</p>
+							</div>
+						</li>
+
+						<li class="show">
+							<div class="show-min">
+								<a href="./show/show_id" title="vai alla pagina della serie">
+									<img src="../img/miniature/HIMYM_min.jpg" alt="poster della serie">
+								</a>
+							</div>
+							<div class="show-info">
+								<p class="show-name">
+									<a href="show/show_id">How I met your mother</a>
+								</p>
+								<p class="show-consigliati">consigliato da 0 persone</p>
+							</div>
+						</li>
+
+						<li class="show">
+							<div class="show-min">
+								<a href="./show/show_id" title="vai alla pagina della serie">
+									<img src="../img/miniature/rickAndMorty_min.jpg" alt="poster della serie">
+								</a>
+							</div>
+							<div class="show-info">
+								<p class="show-name">
+									<a href="show/show_id">Rick e Morty</a>
+								</p>
+								<p class="show-consigliati">consigliato da 0 persone</p>
+							</div>
+						</li>
+
+						<li class="show">
+							<div class="show-min">
+								<a href="./show/show_id" title="vai alla pagina della serie">
+									<img src="../img/miniature/modernFamily_min.jpg" alt="poster della serie">
+								</a>
+							</div>
+							<div class="show-info">
+								<p class="show-name">
+									<a href="show/show_id">Modern family</a>
+								</p>
+								<p class="show-consigliati">consigliato da 0 persone</p>
+							</div>
+						</li>
+
+						<li class="show">
+							<div class="show-min">
+								<a href="./show/show_id" title="vai alla pagina della serie">
+									<img src="../img/miniature/bigBangTheory_min.jpg" alt="poster della serie">
+								</a>
+							</div>
+							<div class="show-info">
+								<p class="show-name">
+									<a href="show/show_id">The Big Bang theory</a>
+								</p>
+								<p class="show-consigliati">consigliato da 0 persone</p>
+							</div>
+						</li>
+
+					</ul>
+				</section>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="footer__nav">
+			<ul class="list_no-style">
+				<li><a href="">Supporto </a></li>
+				<li><a href=""><span xml:lang="EN">Privacy</span></a></li>
+				<li><a href="">About</a></li>
+			</ul>	
+		</div>
+	</div>
+
+	
+
+<script>
+//Parte searchBar
+function showResult(str) {
+	  if (str.length==0) {
+	    document.getElementById("livesearch").innerHTML="";
+	    document.getElementById("livesearch").style.border="0px";
+	    return;
+	  }
+	  if (window.XMLHttpRequest) {
+	    // code for IE7+, Firefox, Chrome, Opera, Safari
+	    xmlhttp=new XMLHttpRequest();
+	  } else {  // code for IE6, IE5
+	    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	  }
+	  xmlhttp.onreadystatechange=function() {
+	    if (this.readyState==4 && this.status==200) {
+	      document.getElementById("livesearch").innerHTML=this.responseText;
+	      document.getElementById("livesearch").style.border="1px solid #A5ACB2";
+	    }
+	  }
+	  xmlhttp.open("GET","../php/livesearch.php?q="+str,true);
+	  xmlhttp.send();
+	}
+	
+//Parte responsive
+function myFunction() {
+    var x = document.getElementById("nav");
+    var y = document.getElementById("nav__top-list");
+    var z = document.getElementById("nav__logo-container");
+
+
+    if (x.className === "nav") {
+        x.className += " responsive";
+        y.className += " responsive";
+        z.className += " responsive";
+    } else {
+        x.className = "nav";
+        y.className = "nav__top-list";
+        z.className = "nav__logo-container";
+    }
+}
+</script>
+
+</body>
+</html>
+
+

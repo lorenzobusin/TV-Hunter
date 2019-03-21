@@ -1,0 +1,129 @@
+
+
+#pagina-About{ 
+    margin: 1em;     
+}
+
+.sezione-sviluppatore img{
+  width: 25%;
+}
+
+#titolo-pagina-about{
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #333;   
+}
+
+#titolo-pagina-about h3{
+  margin-bottom: 0.2em;
+}
+
+.paragrafo-sviluppatore img{
+    width: 13em;
+    display: block;
+    margin: 0 auto;
+}
+
+.informazioni-sviluppatore h3{
+    margin-top: 0.3em;
+    margin-bottom: 1em;
+    font-family: "Roboto";
+    text-align: center;  
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.contenuto-about{
+  margin: 0.5em;
+  font-weight: 300;
+}
+
+.pagina-About p{
+    margin-left: 1em;
+}
+
+/* Versione tablet*/
+@media screen and (min-width: 601px) and (max-width: 1024px){
+
+  .informazioni-sviluppatore h3{
+    width: 17em;
+    margin-bottom: 1em;
+  }
+
+  #pagina-About{ 
+    margin: 2em;
+    font-size: 1.5em;
+  } 
+  #sviluppatori-generale{
+    margin-bottom: 3em;
+  }
+  #sviluppatori ul li:last-child{
+    margin-bottom: 3em;
+  }
+}
+
+/* Versione desktop  */
+@media screen and (min-width: 1025px){
+  #pagina-about{
+    margin-bottom: 3em; 
+    font-size: 1.5em; 
+  }
+
+  #pagina-about p{
+    margin-left: 1em;
+  }
+
+  .contenuto-about{
+    font-size: 1.1em;
+  }
+
+  .titolo-about{
+      font-size: 1.5em;
+      font-weight: 700;
+      color: #333; 
+  }
+
+  .sezione-sviluppatore{
+       display: inline;
+  }
+
+  .descrizione-sviluppatore{
+     font-size: 0.75em;  
+     margin-bottom: 0; 
+     margin-top: 0; 
+  }
+
+  #sviluppatori{
+     margin-bottom: 2em;
+  }
+  .nome-sviluppatore{
+      font-weight: 500;
+      font-size: 1em; 
+      margin-bottom: 0; 
+      margin-top: 0; 
+  }
+
+  .informazioni-sviluppatore{
+      margin-left: 0.5em;
+      width: 12em; 
+  }
+
+  .informazione-sviluppatore img{
+    max-height: 90%;
+    max-width: 90%;
+  }
+
+  .paragrafo-sviluppatore{
+     width: 12em;
+     height: 12em;
+     margin-left: 1em; 
+     margin-right: 1em; 
+     margin-bottom: 4em;
+  }
+
+  .paragrafo-sviluppatore img{
+      height: 12em;
+      width: 12em;
+      margin-bottom: 0; 
+  }
+}

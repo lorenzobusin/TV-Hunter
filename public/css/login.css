@@ -1,0 +1,95 @@
+#login *{
+  box-sizing: border-box;
+}
+
+#login .login {
+  padding: 1em 0 2em 0;
+}
+#login h2{
+	text-align:center;
+}
+#login__top .login__colonna:first-of-type{
+	border-right: 2px solid black;
+}
+
+/* style inputs and link buttons */
+#login input,
+#login .btn {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 1em;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+#login input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+#login .fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+#login .twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+#login .google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+/* style the submit button */
+#login input[type=submit] {
+  background-color: #fac100;
+  color: white;
+  cursor: pointer;
+}
+
+/* Two-column layout */
+#login .login__colonna {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 5%;
+}
+
+/* Clear floats after the columns */
+#login .login__riga:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* bottom container */
+#login .bottom-container {
+  text-align: center;
+  background-color: #1f262d;
+  border-radius: 0px 0px 4px 4px;
+}
+
+#login .bottom-container a{
+  color: white;
+  opacity: 1;
+  border: none;
+}
+
+/* Responsive layout - when the screen is less than 751px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 751px) {
+  #login .login__colonna {
+    width: 100%;
+    margin-top: 0;
+  }
+  #login__top .login__colonna:first-of-type{
+	border-right: 0px;
+	}  
+}

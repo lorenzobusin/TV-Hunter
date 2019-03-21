@@ -1,0 +1,5 @@
+<div class="errore">
+	<p>
+		<!-- Messaggio_Errore -->
+	</p>
+</div>

@@ -1,0 +1,54 @@
+		<div class="content">
+		 	<div class="login__riga">
+	       		<div class="login__colonna">
+	        		<!-- Errore -->
+	       		</div>
+	       		
+       		</div>
+			
+		  <div id="login__top" class="login">
+        <form action="login_action.php" method="post">
+          <div class="login__riga">
+            <h2>Effettua l'accesso con un <span lang="EN">social</span> a scelta oppure manualmente</h2>                   
+            <div class="login__colonna">
+              <input type="text" name="username" title="username" placeholder="Nome utente" required/>
+              <input type="password" name="password" title="password" placeholder="Password" required/>
+              <input type="submit" value="Accedi"/>
+            </div>
+            <div class="login__colonna">
+              <a  href="javascript:void(0);" class="fb btn" onclick="loginSocial()">
+                <i class="fa fa-facebook fa-fw"></i><span lang="EN">Login</span> con <span lang="EN">Facebook</span><!-- TODO: aggiungere icona social -->
+              </a>
+              <a href="javascript:void(0);" class="twitter btn" onclick="loginSocial()">
+                <i class="fa fa-twitter fa-fw"></i><span lang="EN">Login</span> con <span lang="EN">Twitter</span><!-- TODO: aggiungere icona social -->
+              </a>
+              <a href="javascript:void(0);" class="google btn" onclick="loginSocial()">
+                <i class="fa fa-google fa-fw"></i><span lang="EN">Login</span> con <span lang="EN">Google+</span><!-- TODO: aggiungere icona social -->
+              </a>
+            </div>
+          </div>
+                <!-- The Modal -->
+      <div id="modal-login-social" class="modal">
+        <!-- Modal content -->
+         <div class="modal-content">
+           <a href="javascript:void(0);" onclick="closeModal()"><span class="close">&times;</span></a>
+           <p>Siamo spiacenti ma la funzione di accesso tramite <span lang="EN">social</span> verr&agrave;  introdotta nelle versioni successive</p>
+         </div>
+      </div>
+          
+        </form>
+		  </div>
+    
+      <div class="bottom-container">
+        <div class="login__riga">
+          <div class="login__colonna">
+            <a href="signup.php" class="btn">Iscriviti</a>
+          </div>
+          <div class="login__colonna">
+            <a href="#" class="btn">Password dimenticata?</a>
+          </div>
+        </div>
+      </div> 
+            
+ 
+    </div>

@@ -1,0 +1,28 @@
+	<div class="page-center">
+		<div class="header" id = "header">
+				<!-- Page_Head -->
+		</div>
+		<div class="login-bar vertical-center">
+			<span class="white">Ti trovi in:</span>
+			<div class="link-navigazione">
+			<!-- Link_Navigazione -->
+			</div>
+			<div class="non-logged-user align-right">
+			<form action="<!-- Url_Log -->">
+					<span class="user-name"> <!-- Nome --> </span>				
+    				<button type="submit"><!-- Log --></button>
+				</form>
+			</div>
+		</div>
+		<div class="content">
+			<div id="risultati-ricerca">
+				
+			</div>
+			<!-- Side_Bar -->
+
+			<!-- contenuto effettivo della pagina -->
+			<div id="<!-- Nome_Pagina -->">
+				<!-- Contenuto_Effettivo -->
+			</div>
+		</div>
+	</div>

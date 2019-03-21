@@ -1,0 +1,39 @@
+
+
+
+#contenuto-pagina h3{
+	font-weight: 500;
+	margin-left: 0.5em;
+}
+
+
+#titolo h1{
+	font-size: 1.7em;
+	font-weight:500;
+}
+
+#info-privacy{
+	font-size: 1.4em;
+	margin: 2em;
+	font-weight: 300;
+}
+
+#info-privacy h1{
+
+}
+
+#info-privacy h2, #terms h2 {
+ 
+}
+
+.sezione-privacy{
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px){
+
+}
+
+@media screen and (min-width: 1025px){
+
+}
+

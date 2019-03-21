@@ -1,0 +1,16 @@
+					<!-- Div_Consigliati -->
+						<a href="<!-- Url_Show -->" title="vai alla pagina della serie">
+									<img src="<!-- Immagine -->" alt="poster della serie">
+						</a>
+						<div class="show__info">
+						<a href="<!-- Url_Show -->" title="vai alla pagina della serie">
+							<h2><!-- Titolo --></h2>
+						</a>
+							<p class="info__descrizione">
+								<!-- Descrizione -->
+							</p>
+							<p class="info__consigliati">
+								Consigliato dal <!-- Consigliato -->% degli utenti
+							</p>
+						</div>
+					</div>

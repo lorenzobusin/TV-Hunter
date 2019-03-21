@@ -1,0 +1,87 @@
+            <div class="pagina-FAQ">
+            	<div id="descrizione-FAQ">            
+					<h1> FAQ </h1>					
+					<p> 
+						La pagina presenta le risposte alle domande che <strong> pi&ugrave; frequentemente </strong> sono state
+						richieste da parte degli utenti registrati agli amministratori. 
+					</p>					
+				</div>
+
+				<div id="lista-domande-risposte">
+					<h1 class = "titolo-domanda"> Come ci si registra al sito? </h1>
+					<p class = "risposta"> 
+						La registrazione al sito pu&ograve; avvenire in <strong> due modi</strong>, il primo tramite compilazione di un form che 
+						&eacute; 
+						raggiungibile attraverso la sezione di login che si raggiunge cliccando in alto a destra della pagina: 
+					</p>
+
+						<div class = "immagine-faq">
+							<picture>
+								<source media="(min-width: 751px)" srcset="../img/faq/login.png"/>
+								<img src= "../img/faq/loginSmall.PNG" alt="Indicazioni posizione login"/>
+							</picture>
+							
+						</div>
+						
+						<div class = "caption-immagine">
+							Posizione tasto di login.
+						</div>
+						
+					<p class = "risposta"> 
+						In seguito va compilato ogni campo presente facendo attenzione al campo username che deve essere <strong> univoco </strong>. 
+						Quindi se ci si &eacute; gi&agrave; registrati con un email il sistema non completer&agrave; la registrazione.
+						Il secondo modo che sar&agrave; disponibile in futuro &eacute; la registrazione tramite social network.  
+					</p>
+
+					<h1 class = "titolo-domanda"> Come cerco una serie Tv? </h1>
+					<p class = "risposta"> 
+						Per cercare una serie Tv specifica bisogna inserire all'interno dell'apposita barra di ricerca, posta in alto a sinistra dello schermo,
+						il nome delle serie Tv che si sta cercando. 
+					</p>
+
+						<div class = "immagine-faq">
+							<picture>
+								<source media="(min-width: 751px)" srcset="../img/faq/searchbar.png"/>
+								<img src="../img/faq/searchbarSmall.PNG" alt="Posizione della search bar."/>
+							</picture>
+							
+						</div>
+
+						<div class = "caption-immagine">
+							Posizione della search bar.
+						</div>						
+
+					<p class = "risposta"> 
+						Inoltre verranno caricati in anteprima, come illustrato nell'immagine, i risultati pi&ugrave; simili rispetto alla ricerca che si sta seffettuando. 
+					</p>
+
+					<h1 class = "titolo-domanda"> Come posso segnalare un commento? </h1>
+					<p class = "risposta"> 
+						I commenti ritenuti offensivi possono essere segnalati tramite l'apposito tasto "Segnale", disponibile 
+						in alto a destra di ogni commento. 
+					</p>
+
+						<div class = "immagine-faq">
+							<picture>
+								<source media="(min-width: 751px)" srcset="../img/faq/segnalazione.PNG"/>
+								<img src="../img/faq/segnalazioneSmall.PNG" alt="Posizione della segnalazione nei commenti."/>
+							</picture>							
+						</div>
+
+						<div class = "caption-immagine">
+							Posizione della segnalazione.
+						</div>	
+
+					<p class = "risposta"> 
+						Gli amministratori prenderanno nota delle segnalazioni e se lo riterranno opportuno cancelleranno il commento, bannando in 
+						casi gravi l'utente segnalato.
+					</p>
+
+					<!--  TEMPLATE per aggiungere nuove FAQ -->
+
+					<!-- <h1 class = "titolo-domanda"> Prova </h1>  
+					<h2 class = "risposta"> 
+						Prova
+					</h2> -->
+				</div>
+   		 	</div>

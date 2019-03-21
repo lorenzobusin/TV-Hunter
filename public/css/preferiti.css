@@ -1,0 +1,52 @@
+  /*preferiti section*/
+
+  #preferiti h1{
+    font-size: 2em;
+    padding-left: 2em;
+  }
+
+  #preferiti ul{
+    height: 354px;  /*Vanno bene i pixel? magari usare vh o %*/ 
+    clear: both;
+  }
+
+  #preferiti li{
+    padding-left: 0.5em;
+  }
+
+  #preferiti .show-min a{
+    padding-bottom: 1px; /*is px okay?*/
+  }
+
+  #preferiti img{
+    transition: all .3s ease-in-out;
+  }
+
+  #preferiti img:hover{
+    /*opacity: 0.9;*/
+    transform: scale(1.16);
+  }
+
+  #preferiti .show-info{
+    padding-left: 8px;
+  }
+
+  #preferiti .show-name{
+    margin-top: 0;
+    margin-bottom:2em;
+  }
+
+  #preferiti .show-name a{
+    padding: 0;
+    color: black;
+  }
+
+
+@media screen and (min-width: 1025px){
+
+}
+
+
+
+@media screen and (min-width: 751px) and (max-width: 1024px){
+}

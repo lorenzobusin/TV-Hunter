@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../css/styleProva.css">
+
+<link rel="icon" type="image/png" href="../img/favicomatic/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="../img/favicomatic/favicon-16x16.png" sizes="16x16" />
+
+</head>
+
+<body>
+    <body>
+	<!-- Sostituire con tag HTML5 <header>? Vedere pro e contro
+		Contro: XHTML5 non esiste -> in xhtml i tag header e footer non esistono.
+
+	-->
+	<div class="nav" id="nav">
+		<div class="nav__logo-container" id="nav__logo-container">
+			<a href="<!-- refHome -->" title="Homepage"> 
+				<img src="../logo/logo_TVhunter.png" alt="logo del sito, riporta alla homepage">		
+			</a>
+		</div>
+		
+		<div class="nav__ricerca">
+			<input type="text" placeholder="Cerca..">
+		</div>
+		
+		<ul class="nav__top-list list_no-style	" id="nav__top-list">
+			<li class="nav__esplora"><a href="<!-- refEsplora -->" title="Esplora">Esplora</a></li>
+			<li class="nav__restricted nav__profilo"><a href="<!-- refProfilo -->" title="Profilo">Profilo</a></li>
+			<li class="nav__restricted nav__preferiti"><a href="<!-- refPreferiti -->" title="Preferiti">Preferiti</a></li>
+		</ul>
+
+		<ul class="nav__bottom-list list_no-style">
+			<li class="nav__restricted nav__impostazioni"><a href="<!-- refImpostazioni -->" title="Impostazioni">Impostazioni</a></li>
+			<li class="nav__faq"><a href="<!-- refFaq -->"><acronym title="Frequently Asked Questions">FAQ</acronym></a></li>
+			<li class="nav__supporto"><a href="<!-- refSupporto -->" title="Supporto">Supporto </a></li>
+			<li class="nav__privacy"><a href="<!-- refPrivacy -->" title="Privacy"><span xml:lang="EN">Privacy</span></a></li>
+			<li class="nav__about"><a href="<!-- refAbout -->" title="About"><span xml:lang="EN">About</span></a></li>
+   		</ul>
+
+		<div class="nav__social">
+		</div>
+		<div class="nav__icon">
+			<a href="#footer-responsive-menu"><i class=""></i>Menu</a> <!-- TODO: aggiungere pulsante icons -->
+		</div>
+
+	</div>
+
+    <div class="page-center">      
+    	<div class="header" id = "header">
+			<div class="header-content">
+				<h1>Tv Hunter</h1> 
+			</div>
+		</div> 
+        <div id="login-bar" class="login-bar vertical-center">
+            <div class="non-logged-user align-right">
+                <span>Accesso non effettuato.</span>
+                <button><a href="">Accedi</a></button>
+            </div>
+            <div class="logged-user align-right display-none">
+                <span class="user-name"><a href="">dbarasti</a></span> (
+                <a href="">Logout</a>)
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="supporto">
+	            <div class="messaggi">
+					<form class="post-form" action="messaggio_action.php" method="get">					
+						<div class="top">		
+							<label for="label-messaggio" >Invia un messaggio agli amministratori:</label>																												
+							<div class="post-holder">	
+								<div class="textarea-wrap">
+									<textarea placeholder="inserisci il tuo messaggio" title="inserisci il tuo messaggio" name="post"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="submit-post">
+							<input class="submit-post-btn" type="submit" value="Invia"/>
+						</div>	
+					</form>
+					<div id="tabella">
+						<table class="messaggi">
+						 	<caption>Tabella dei messaggi inviati con le relative risposte</caption>
+							<thead>
+								<tr>
+		    						<th scope="col">Messaggio</th>
+		    						<th scope="col">Risposta</th>
+		  						</tr>
+		  					</thead>
+		  					<tbody>
+		  						<tr>
+		  							<td scope="row" class="messaggio-inviato">Messaggio inviato</td>
+									<td scope="row" class="messaggio-inviato">Risposta</td>
+		  						</tr>
+		  						<tr>
+		  							<td scope="row" class="messaggio-inviato">Messaggio inviato</td>
+									<td scope="row" class="messaggio-inviato">Risposta</td>
+		  						</tr>
+		  						<tr>
+		  							<td scope="row" class="messaggio-inviato">Messaggio inviato</td>
+									<td scope="row" class="messaggio-inviato">Risposta</td>
+		  						</tr>
+		  						<tr>
+		  							<td scope="row" class="messaggio-inviato">Messaggio inviato</td>
+									<td scope="row" class="messaggio-inviato">Risposta</td>
+		  						</tr>
+		  						<tr>
+		  							<td scope="row" class="messaggio-inviato">Messaggio inviato</td>
+									<td scope="row" class="messaggio-inviato">Risposta</td>
+		  						</tr>
+	  						</tbody>
+						</table>
+					</div>
+	        	</div>
+    		    <div class="segnalazioni">
+					<div id="tabella">
+						<table class="messaggi">
+						 	<caption>Tabella delle azioni svolte relative alle segnalazioni effettuate</caption>
+							<thead>															
+								<tr>
+	    							<th scope="col">Serie</th>
+	    							<th scope="col">Post</th>
+	    							<th scope="col">Azione</th>
+	  							</tr>
+							</thead>
+						
+							<!--  Format di tabella da replicare per ogni tipo di segnalazione  -->
+		  					<tbody>						
+		  						<tr>
+		    						<td scope="row" class="serie">Serie</td>
+		    						<td scope="row" class="segnalazione">Post</td>
+		    						<td scope="row" class="azione">Azione</td>
+		  						</tr>
+		  						<tr>
+		    						<td scope="row" class="nome-utente">Serie</td>
+		    						<td scope="row" class="tipo-segnalazione">Post</td>
+		    						<td scope="row" class="tipo-segnalazione">Azione</td>
+		  						</tr>
+		  						<tr>
+		    						<td scope="row" class="nome-utente">Serie</td>
+		    						<td scope="row" class="tipo-segnalazione">Post</td>
+		    						<td scope="row" class="tipo-segnalazione">Azione</td>
+		  						</tr>
+		  						<tr>
+		    						<td scope="row" class="nome-utente">Serie</td>
+		    						<td scope="row" class="tipo-segnalazione">Post</td>
+		    						<td scope="row" class="tipo-segnalazione">Azione</td>
+		  						</tr>
+		  						<tr>
+		    						<td scope="row" class="nome-utente">Serie</td>
+		    						<td scope="row" class="tipo-segnalazione">Post</td>
+		    						<td scope="row" class="tipo-segnalazione">Azione</td>
+		  						</tr>
+		  					</tbody>  						
+						</table>
+					</div>
+	        	</div>
+	        	
+        	</div>
+    	</div>
+
+	<div class="footer">
+		<div class="footer__nav">
+			<ul class="list_no-style">
+				<li><a href="">Supporto </a></li>
+				<li><a href=""><span xml:lang="EN">Privacy</span></a></li>
+				<li><a href="">About</a></li>
+			</ul>	
+		</div>
+	</div>
+
+	<div id="footer-responsive-menu">
+		<ul class="list_no-style">
+			<li><a href="<!-- refEsplora -->" title="Esplora">Esplora</a></li>
+			<li><a href="<!-- refProfilo -->" title="Profilo">Profilo</a></li>
+			<li><a href="<!-- refPreferiti -->" title="Preferiti">Preferiti</a></li>
+			<li><a href="">Supporto </a></li>
+			<li><a href=""><span xml:lang="EN">Privacy</span></a></li>
+			<li><a href="">About</a></li>
+		</ul>	
+	</div>
+
+	<div id="torna-su">
+		<a href="#">Torna su</a>
+	</div>
+
+
+	</div>
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("nav");
+    var y = document.getElementById("nav__top-list");
+    var z = document.getElementById("nav__logo-container");
+
+
+    if (x.className === "nav") {
+        x.className += " responsive";
+        y.className += " responsive";
+        z.className += " responsive";
+    } else {
+        x.className = "nav";
+        y.className = "nav__top-list";
+        z.className = "nav__logo-container";
+    }
+}
+
+//Parte Stagione->Episodio 
+function episodi(link) { 
+	  if (window.XMLHttpRequest) { 
+	    // code for IE7+, Firefox, Chrome, Opera, Safari 
+	    xmlhttp=new XMLHttpRequest(); 
+	  } else {  // code for IE6, IE5 
+	    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP"); 
+	  } 
+	  xmlhttp.onreadystatechange=function() { 
+	    if (this.readyState==4 && this.status==200) { 
+	      document.getElementById("stagione").innerHTML=this.responseText; 
+	    } 
+	  } 
+	  xmlhttp.open("GET",String(link),true); 
+	  xmlhttp.send(); 
+	} 
+
+//Parte searchBar
+function showResult(str) {
+	  if (str.length==0) {
+	    document.getElementById("risultati-ricerca").innerHTML="";
+	    document.getElementById("risultati-ricerca").style.border="0px";
+	    return;
+	  }
+	  if (window.XMLHttpRequest) {
+	    // code for IE7+, Firefox, Chrome, Opera, Safari
+	    xmlhttp=new XMLHttpRequest();
+	  } else {  // code for IE6, IE5
+	    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	  }
+	  xmlhttp.onreadystatechange=function() {
+	    if (this.readyState==4 && this.status==200) {
+	      document.getElementById("risultati-ricerca").innerHTML=this.responseText;
+	      document.getElementById("risultati-ricerca").style.border="1px solid #A5ACB2";
+	    }
+	  }
+	  xmlhttp.open("GET","../php/livesearch.php?q="+str,true);
+	  xmlhttp.send();
+	}
+	
+
+</script>
+
+</body>
+</html>
+   
+
+
+    

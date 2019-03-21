@@ -1,0 +1,109 @@
+html, body{
+	height: 100%;
+}
+
+
+.content{
+	scroll-behavior: smooth;
+}
+
+#content__homepage{
+	height: 100%;
+	background: #14181c url(../img/background-dark.png) 0 -1px repeat-x;
+	margin-bottom: 0em;
+}
+
+.homepage__welcome{
+	height: 20vh;
+	display: flex;
+	align-items: center;
+	left: 0;
+	top:0;
+}
+
+.welcome__text{
+	color: white;
+	font-size: 2.2em;
+	text-align: center;
+	margin: auto;
+}
+
+#homepage-advice a{
+	text-decoration: none;
+	color: #aaa;
+}
+
+#homepage-advice a:active{
+	color: #aaa;
+}
+
+.homepage__consigliati > h3{
+	color: #aaa;
+	text-align: center;
+	margin-bottom: 2.5em;
+}
+
+.consigliati__show{
+	color: white;
+	height: 300px;
+	display: flex;
+	margin-bottom: 2em;
+}
+
+.consigliati__show:last-child{
+	margin-bottom: 0;
+}
+
+.consigliati__show img{
+	float: left;
+}
+
+.consigliati__show h2{
+	margin-top: 0;
+	color: white;
+}
+
+.consigliati__show a{
+	text-decoration: underline dotted #aaa; 
+}
+
+.homepage__consigliati .show__info{
+	padding-left: 1em;
+	color: #aaa;
+	overflow-y: auto;
+}
+
+#content__homepage .iscriviti{
+	background-color: transparent;
+	display: flex;
+	height: 5em;
+}
+
+#content__homepage .iscriviti p{
+	color: white;
+	margin: auto;
+	text-align: center;
+}
+
+#content__homepage .iscriviti a{
+	color: white;
+}
+
+#content__homepage .iscriviti a:visited{
+	color: #aaa;
+}
+
+@media screen and (min-width: 1025px){
+	#homepage-advice a:hover{
+	color: #999999;
+	}	
+}
+
+@media screen and (max-width: 1024px)and (min-width: 751px){
+	.homepage__consigliati{
+		margin-bottom: 3em;
+	}
+	#content__homepage .iscriviti{
+		margin-bottom: 3em;
+	}
+}

@@ -1,0 +1,99 @@
+
+
+
+					<!-- Introduzione al funzionamento/scopo del sito -->
+
+		<div id = "pagina-About">
+
+		 	
+			<h2 class="titolo-about"> 
+				<span lang="EN">About Tv Hunter</span>:
+			</h2>
+			
+
+			<div class="contenuto-about">
+				<p> 
+				
+					Il sito fornisce al visitatore una panoramica riguardante il mondo delle serie tv, mostrando le nuove uscite e mettendo in opportune sezioni le 				serie tv più votate e consigliate dalla community. <br/>
+
+					In particolare per ogni serie tv il sito da informazioni riguardanti la trama, gli attori, gli episodi divisi per stagione e extra, ovvero 					mostra contenuti simili alla serie tv visualizzata nella pagina. <br/>
+
+					L'utente non iscritto può registrarsi nell'apposita sezione che permetterà l'accesso a contenuti come il votare e commentare le serie Tv. <br/>
+				
+				</p>				       
+			</div>	   
+			
+			<!-- Foto di noi 4 e spiegazione ruoli -->
+
+			<div id="sviluppatori">	
+
+				<h2 class="titolo-about"> 
+						Sviluppatori: 
+				</h2>
+
+				<div class="contenuto-about">
+					<p> 
+						Il sito è stato sviluppato per l'insegnamento di Tecnologie Web presente al terzo anno del corso di laurea in Informatica all'Università di Padova. Cliccando sopra le immagini si verrà reindirizzati ai profili personali degli sviluppatori. 
+					</p>	
+				</div>
+
+					<ul class="list-inline list_no-style">
+  						<li class="sezione-sviluppatore">	
+							<div class="paragrafo-sviluppatore">
+								<a href="https://github.com/dbarasti">
+									<img src="../img/aboutImage/davide.jpeg" alt="immagine di Davide Barasti"/>
+								</a>
+								<div class="informazioni-sviluppatore">
+									<div class="nome-sviluppatore">
+										Davide Barasti 
+									</div>
+								</div>
+							</div>
+						</li>
+
+  						<li class="sezione-sviluppatore">
+							<div class="paragrafo-sviluppatore">
+								<a href="https://github.com/GiovanniSorice">
+									<img src="../img/aboutImage/ciruz.jpg" alt="immagine di Giovanni Sorice"/>
+								</a>
+								<div class="informazioni-sviluppatore">
+									<div class="nome-sviluppatore">
+										Giovanni Sorice 
+									</div>
+														
+								</div>
+							</div>						
+						</li>
+
+  						<li class="sezione-sviluppatore">
+							<div class="paragrafo-sviluppatore">
+								<a href="https://github.com/lorenzobusin">
+									<img src="../img/aboutImage/lore.jpeg" alt="immagine di Lorenzo Busin"/>
+								</a>
+							
+								<div class="informazioni-sviluppatore">
+									<div class="nome-sviluppatore">
+										Lorenzo Busin
+									</div>
+								</div>						
+							</div>
+						
+						</li>
+
+  						<li class="sezione-sviluppatore">
+							<div class="paragrafo-sviluppatore">
+								<a href="https://github.com/fraccorzo">
+									<img src="../img/aboutImage/chicco.jpeg" alt="immagine di Francesco Corti"/>
+								</a>
+								<div class="informazioni-sviluppatore">
+						      			<div class="nome-sviluppatore">
+											Francesco Corti 
+						      			</div		>
+								</div>
+							</div>						
+						</li>
+					</ul>  					
+			</div>	
+		</div>							
+
+

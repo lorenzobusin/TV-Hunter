@@ -1,0 +1,2290 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
+  
+
+  .titolo-genere{
+    padding-left: 1em; 
+    float: left;
+    margin-top: 1em;
+  }
+
+  h1{
+  	font-weight: 700;
+  }
+  h2{
+  	font-weight: 500;
+  }
+
+  #esplora section > a{
+    margin-right: 0.7em;
+    margin-top: 1.3em;
+    float: right;
+    font-size: 0.8em;
+    color: blue;
+  }
+  
+  .elenco-serie{
+    clear: both;
+  }
+
+  #esplora ul{
+    overflow: hidden; 
+    height: 354px;  
+    clear: both;
+  }
+ 		
+  .nome-sviluppatore{  	  
+      text-align: center;
+      margin-top: 0.09em;
+      margin-bottom: 0.8em;    
+  }		
+
+
+
+  .elenco-serie li{
+    overflow: hidden; 
+    padding-left: 0.5em;
+  }
+
+  .elenco-serie li:first-child{
+      padding-left: 0em;
+  }
+
+  .elenco-serie li:last-child{
+    margin-bottom: 4em;
+  }
+
+  .elenco-serie .show-min a{
+    padding-bottom: 1px; 
+  }
+
+  .elenco-serie img{
+    transition: all .3s ease-in-out;
+  }
+
+  .elenco-serie img:hover{
+    /*opacity: 0.9;*/
+    transform: scale(1.16);
+  }
+
+  .elenco-serie .show-info{
+    padding-left: 8px;
+  }
+
+  .elenco-serie .show-name{
+    margin-top: 0;
+    margin-bottom:5px; 
+  }
+
+  .elenco-serie .show-name a{
+    padding: 0;
+    color: black;
+  }
+
+  .elenco-serie .show-consigliati{
+    font-size: small;
+    margin:0;
+  }
+
+
+
+
+#contenuto-pagina h3{
+  font-weight: 500;
+  margin-left: 0.5em;
+}
+
+
+#info-privacy{
+  margin: 2em;
+  font-weight: 300;
+}
+
+#info-privacy h1{
+
+}
+
+#info-privacy h2, #terms h2 {
+ 
+}
+
+.sezione-privacy{
+}
+
+	.nav{
+    	width: 100%;
+		height: 4em;
+		background-color: #2f4858;
+		border-right: 2px solid black;
+		display: flex; 		
+		margin: 0;
+		padding: 0;
+		position: fixed;
+		overflow: hidden;
+		left: 0;
+		top: 0;
+		background: #14181c url(../img/background-dark.png) 0 -1px repeat-x;
+		/*Test*/
+		z-index: 999;
+		
+  	}
+  	.nav__top-list {
+		padding-left: 1.5em;	
+	}
+	.nav__bottom-list{
+		display:none;
+ 	}
+  	.nav__social{
+		display:none;
+  	}
+  	.nav__esplora:before{
+   		display: none ;
+  	}
+  	.nav__profilo:before{
+   		display: none ;
+  	}
+  	.nav__preferiti:before{
+   		display: none ;
+  	}
+  	.nav ul:after{
+		display: none;
+   	}	  	
+  	.nav li{
+		display: inline-block;
+		padding-right: 1.5em;  
+  	}
+  .nav__logo-container{
+		text-align: left;
+		padding-top: 0em;	
+		padding-bottom: 0em;
+		width: 4em;
+		height: 4em;
+		margin-top:0;			
+	}
+   .nav__logo-container img{
+		width: 100%; 
+		opacity: 0.85;
+		
+	}	
+	
+
+
+
+	  /*Navigator section**/
+	.nav__top-list li {
+		display: none;
+  	}
+ 	.nav__icon {
+		float: right;
+		display: block;
+		position:absolute;
+		right:2em;
+		height: 100%;
+		margin-top:1.25em; 
+  	}
+  	.nav.responsive{
+		height: auto;
+  	}
+	.nav__top-list.responsive {
+		position: relative;
+		margin-top:0.74em; 
+	}
+   	.nav__top-list.responsive  .nav__icon {
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	    display: block;
+  	}
+  	.nav__top-list.responsive li {
+	    float: none;
+	    display: block;
+	    text-align: left;   
+	}	  
+   
+   .nav__logo-container{
+   		top:0;
+	}
+	.nav__logo-container.responsive{
+	display:none;
+	}	
+
+	.nav a{
+	  color: #aaa;
+	}
+	
+		.nav__ricerca{                                                      
+	  display: flex ;
+	  justify-content: center;
+	  align-items: center; 
+	  text-align: left; 
+	  background: white;
+	  margin: 20px;
+	  border: 1px;
+	  border-radius: 25px; 
+	}
+	
+	.nav__ricerca input{
+	  width: 78%; 
+	  height: 1.8em;
+	  border: none;
+	  border-radius: 25px;
+	  margin: 0;
+	  outline: none; 
+	  box-shadow: none;    
+	  background: transparent;
+	  float: left;
+	}
+	
+	.nav__ricerca button {
+	  float: right;
+	  width: 20%;
+	  height: 1.5em;
+	  border: none;
+	   background: transparent;  
+	   padding: 0;
+	     margin-top: 3px;
+	   
+	}
+	.nav__ricerca .icon-search{
+		content: url("../img/nav/search.png");
+		 height: 100%;
+		
+	}
+
+.page-center{
+  width: 100%;
+  position:unset;
+  right:0;
+  margin-top: 4em;
+  font-family: "Roboto";
+  font-weight: 300;
+}
+
+/*CSS div errore*/
+.errore{
+      margin: 1em;  
+}
+
+#risultati-ricerca{
+    width: 100%;
+}
+
+  #risultati-ricerca section > h2{
+    padding-left: 1em; 
+    float: left;
+    margin-top: 1em;
+  }
+
+  #risultati-ricerca section > a{
+    margin-right: 0.7em;
+    margin-top: 1.3em;
+    float: right;
+    font-size: 0.8em;
+    color: #fac100;
+
+  }
+
+  #risultati-ricerca ul{
+    overflow: hidden; 
+    height: 354px;  
+    clear: both;
+  }
+
+  #risultati-ricerca li:first-child{
+      padding-left: 0em;
+  }
+
+  #risultati-ricerca li{
+    overflow: hidden; 
+    padding-left: 0.5em;
+  }
+
+  #risultati-ricerca .show-min a{
+    padding-bottom: 1px; 
+  }
+
+  #risultati-ricerca img{
+    transition: all .3s ease-in-out;
+  }
+
+  #risultati-ricerca img:hover{
+    /*opacity: 0.9;*/
+    transform: scale(1.16);
+  }
+
+  #risultati-ricerca .show-info{
+    padding-left: 8px;
+  }
+
+  #risultati-ricerca .show-name{
+    margin-top: 0;
+    margin-bottom:5px; 
+  }
+
+  #risultati-ricerca .show-name a{
+    padding: 0;
+    color: black;
+  }
+
+  #risultati-ricerca .show-consigliati{
+    font-size: small;
+    margin:0;
+  }
+
+html, body{
+  height: 100%;
+}
+
+
+.content{
+  scroll-behavior: smooth;
+}
+
+#content__homepage{
+  height: 100%;
+  background: #14181c url(../img/background-dark.png) 0 -1px repeat-x;
+  margin-bottom: 0em;
+}
+
+.homepage__welcome{
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  left: 0;
+  top:0;
+}
+
+.welcome__text{
+  color: white;
+  font-size: 2.2em;
+  text-align: center;
+  margin: auto;
+}
+
+#homepage-advice a{
+  text-decoration: none;
+  color: #aaa;
+}
+
+#homepage-advice a:active{
+  color: #aaa;
+}
+
+.homepage__consigliati > h3{
+  color: #aaa;
+  text-align: center;
+  margin-bottom: 2.5em;
+}
+
+.consigliati__show{
+  color: white;
+  height: 300px;
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.consigliati__show:last-child{
+  margin-bottom: 0;
+}
+
+.consigliati__show img{
+  float: left;
+}
+
+.consigliati__show h2{
+  margin-top: 0;
+  color: white;
+}
+
+.consigliati__show a{
+  text-decoration: underline dotted #aaa; 
+}
+
+.homepage__consigliati .show__info{
+  padding-left: 1em;
+  color: #aaa;
+  overflow-y: auto;
+}
+
+#content__homepage .iscriviti{
+  background-color: transparent;
+  display: flex;
+  height: 5em;
+}
+
+#content__homepage .iscriviti p{
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+
+#content__homepage .iscriviti a{
+  color: white;
+}
+
+#content__homepage .iscriviti a:visited{
+  color: #aaa;
+}
+
+
+.list_no-style{
+  list-style: none;
+}
+
+.list-inline li{
+  display: inline;
+  float: left;
+}
+
+.list-inline a{
+  display: block;
+  padding: 8px;
+}
+
+body{
+    margin:0;
+  width: auto !important;
+  height: 100%;
+}
+
+
+.title h1 {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  text-rendering: optimizeLegibility;
+  color: #2c2c2c !important;
+  background-color: #d5d5d5;
+  letter-spacing: .05em;
+  text-shadow: 
+  1px 1px 0px #d5d5d5, 
+  4px 4px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5em;
+}
+
+.header{  
+  background-attachment: fixed;
+  display: none;
+  background-image: url(../img/peaky_blinders.jpg);
+  background-position: center;
+  background-position-y:-6em; 
+  background-color: #2f4858;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.85;
+  height: 35vh;
+  align-items: center;
+  left: 0;
+  top:0;
+}
+
+
+.header-content{
+  width: 15em;
+  margin: 0 auto;
+}
+
+
+.header h1 {
+  color: white;
+  position: relative;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.vertical-center{
+  display: flex;
+  align-items: center;
+}
+
+.align-right{
+  position: absolute;
+  right: 0;
+  margin-right: 5%;
+}
+
+.display-none{
+  display: none;
+}
+/*End utils*/
+
+.login-bar{
+  width: 100%;
+  background: #14181c url(../img/background-dark.png) 0 -50px repeat-x;
+  height: 2.2em;
+  border-bottom: 1px solid black;
+  margin-top: 4em;
+}
+
+.login-bar .user-name a{
+  color: #fac100;
+}
+
+.login-bar .non-logged-user{
+  color: white;
+}
+
+.login-bar .logged-user{
+  color: white;
+}
+
+.login-bar .logged-user span:before{
+  content: url("../img/nav/user-unisex.png");
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.8em; /* same as padding-left set on li */
+  vertical-align: -6px;
+}
+
+.login-bar .non-logged-user button{ 
+  border-radius: 5px;
+}
+
+.login-bar .non-logged-user a{ 
+  color: black;
+  text-decoration:none;
+}
+
+.white{
+  display: none;
+  }
+
+.login-bar .user-name a{
+  color: white;
+  text-decoration: none;
+}
+
+.link-navigazione, .login-bar label{
+  display: none;
+}
+
+.footer{
+    display: none;
+}
+
+#footer-responsive-menu{
+/*height: 90vh;*/
+width: 100%;
+background: #14181c url("../img/background-dark.png") 0 -1px repeat-x;
+margin: 0;
+display: flex;
+}
+
+#footer-responsive-menu ul{
+  margin: auto;
+  padding: 0; 
+  line-height: 3;
+  text-align: center;
+}
+
+#footer-responsive-menu ul a{
+  font-size: 1.5em;
+  color: #aaa;
+}
+
+#torna-su{
+  display: block;
+  background: url("../img/background-dark.png") 0 -300px repeat-x;
+
+}
+
+#torna-su  a{
+  font-size: 1.5em;
+  color: #aaa;
+  position: relative;
+  left: 0.7em;
+  bottom: 0;
+}
+
+#pagina-About{ 
+    margin: 1em;     
+}
+
+.sezione-sviluppatore img{
+  width: 25%;
+}
+
+#titolo-pagina-about{
+  color: #333;   
+}
+
+#titolo-pagina-about h3{
+  margin-bottom: 0.2em;
+}
+
+.paragrafo-sviluppatore img{
+    width: 13em;
+    display: block;
+    margin: 0 auto;
+}
+
+.informazioni-sviluppatore h3{
+    margin-top: 0.3em;
+    margin-bottom: 1em;
+    font-family: "Roboto";
+    text-align: center;  
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.contenuto-about{
+  margin: 0.5em;
+  font-weight: 300;
+}
+
+.pagina-About p{
+    margin-left: 1em;
+}
+
+#login *{
+  box-sizing: border-box;
+}
+
+#login .login {
+  padding: 1em 0 2em 0;
+}
+#login h2{
+  text-align:center;
+}
+#login__top .login__colonna:first-of-type{
+  border-right: 2px solid black;
+}
+
+
+#login input,
+#login .btn {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 1em;
+  line-height: 20px;
+  text-decoration: none; 
+}
+
+#login input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+
+#login .fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+#login .twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+#login .google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+
+#login input[type=submit] {
+  background-color: #fac100;
+  color: white;
+  cursor: pointer;
+}
+
+
+#login .login__colonna {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 5%;
+}
+
+
+#login .login__riga:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+#login .bottom-container {
+  text-align: center;
+  background-color: #1f262d;
+  border-radius: 0px 0px 4px 4px;
+}
+
+#login .bottom-container a{
+  color: white;
+  opacity: 1;
+  border: none;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#signup *{
+  box-sizing: border-box;
+}
+
+/* style the container */
+#signup .signup {
+  padding: 1em 0 2em 0;
+}
+#signup h2{
+  text-align:center;
+}
+
+/* style inputs and link buttons */
+#signup input,
+#signup .btn {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+#signup input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+#signup .fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+#signup .twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+#signup .google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+/* style the submit button */
+#signup input[type=submit] {
+  background-color: #fac100;
+  color: white;
+  cursor: pointer;
+}
+
+/* Two-column layout */
+#signup .signup__colonna {
+  float: left;
+  width: 100%;
+  margin: auto;
+  padding: 0 5%;
+}
+
+/* Clear floats after the columns */
+#signup .signup__riga:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* bottom container */
+#signup .bottom-container {
+  text-align: center;
+  background-color: #1f262d;
+  border-radius: 0px 0px 4px 4px;
+}
+
+#signup .bottom-container a{
+  opacity: 1;
+  color: white;
+  border: none;
+}
+
+
+ .jsonly{
+  display: none !important;
+}
+
+/*Header*/
+
+.header-content h2{
+  color: #161616;
+  padding: 3px;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+.header .text-container{
+  background-color: #fac100;
+  border-radius: 4px;
+}
+
+
+/*Side bar*/
+.side-bar{
+  background-color: #f2f2f2;
+  position: relative;
+  right: 0;
+  margin: 0;
+  border-left: 0 solid black;
+  border-bottom: 1px solid black;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+#side-bar__consigli{
+  text-align: center;
+  float: left;
+  margin: 0;
+  padding-top: 1em;
+}
+
+#side-bar__consigli .pollici{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: inline-block;
+  border-style: outset;
+  width: 40%;
+  background-color: #ffffa0;
+}
+
+#side-bar__consigli #consiglia{
+  margin-right: 0;
+}
+
+.selected{
+  background-color: #fac100 !important;
+}
+
+#side-bar__consigli #sconsiglia{
+  margin-left: 2%;
+}
+
+#side-bar__consigli .pollici:hover{ /*vale per entrambi i pollici*/
+  background-color: #fac100;
+}
+
+#side-bar__consigli .pollici img{
+  width: 100%;
+}
+
+#side-bar__attori{
+  text-align: center;
+  margin: auto;
+  float: right;
+  width: 50%;
+}
+
+#list-attori{
+  padding: 0;
+}
+
+#list-attori li{
+  margin-right: 5%;
+}
+
+.attore-min img{
+  padding-bottom: 0;
+  height: 135px; 
+  border: 1px solid black;
+}
+
+.side-bar .attore-info p{
+  margin-top: 0;
+}
+
+.side-bar .attore-info .nome-personaggio{
+  margin-bottom: 0;
+}
+
+.side-bar .attore-info .nome-attore{
+  font-size: 1em;
+  padding: 0;
+}
+
+.side-bar .attore-info .nome-attore a{
+  padding: 0;
+}
+
+/*actual show page*/
+
+#show-page{ 
+  width: 100%;
+  margin-right: 12em;
+}
+
+
+#show-page .show-info{
+  padding: 1em;
+  border-bottom: 1px solid #fac100;
+  background-color: #f2f2f2;
+}
+
+#show-page .show-descrizione{
+  margin:0;
+  padding: 0;
+  text-align: left;
+}
+
+#show-page .show-seasons{
+  margin-left: 1em;
+}
+
+#show-page .show-seasons h2{
+  color: black;
+}
+
+.selettore-stagione {
+    background-color: #fac100;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1em;
+    margin-left: 2em;
+}
+
+.dropdown__stagioni {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown__stagioni a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown__stagioni a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown__stagioni {
+    display: block;
+}
+
+.dropdown:hover .selettore-stagione {
+    background-color: #edb700;
+}
+
+#stagione{
+  text-align: center;
+  margin:auto;
+}
+
+#stagione th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #fac100;
+    color: black;
+}
+
+#stagione tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+#stagione tr:hover {
+  background-color: #ddd;
+}
+
+#stagione td a{
+  color: black;
+}
+
+.post-section{
+  border: 2px solid #fac100;
+  border-radius: 4px;
+  margin: 1em;
+  margin-top: 5em;
+}
+
+.post-section h2{
+  color: black;
+  margin: 5px;
+}
+
+.post-form{
+  margin: 10px;
+}
+
+.post-form .top{
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.post-holder{
+  border-radius: 4px 4px 0 0;
+  position: relative;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin-left: 0;
+}
+
+.textarea-wrap{
+  display: block;
+  text-align: left;
+}
+
+.post-form textarea{
+  overflow: hidden;
+  height: 40px;
+  background: 0 0;
+  border: none;
+  outline: 0;
+  font-size: 14px;
+  color: #555;
+  width: 100%;
+  padding: 5px;
+  max-width: 98%;
+}
+
+.submit-post{
+  text-align: right;
+  position: relative;
+  margin-top: 0.5em;
+}
+
+.submit-post-btn{
+  color: black;
+  text-transform: uppercase;
+  border-radius: 4px;
+  text-align: center;
+  height: 35px;
+  line-height: 37px;
+  background-color: #fac100;
+  font-size: 17px;
+  padding: 0 25px;
+  border: none;
+  opacity: 0.9;
+}
+
+.submit-post-btn:hover{
+  opacity: 1;
+}
+
+.post{
+  border: 1px solid #aaa;
+  margin: 10px;
+}
+
+.post-header{
+  border-bottom: 1px solid #aaa;
+  margin: 5px;
+}
+
+.clear{
+  clear:both;
+}
+
+.post-header .autore{
+  float: left;
+  display: block;
+  width: 50%;
+}
+
+.post-header .segnala{
+  float: left;
+  display: block;
+  width: 50%;
+  text-align: right;
+}
+
+.post-body{
+  margin: 5px;
+}
+
+.votazioni{
+  margin: 1em;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+.votazioni h1{
+
+  margin: 0;
+}
+
+.votazioni ul{
+  margin: 0;
+}
+
+.votazioni li{
+  font-size: 1.5em;
+  background-color: #ffffa0;
+  width: 20%;
+}
+
+.votazioni li:hover{
+  background-color: #fac100;
+  border-bottom: 0.3em solid #FF831C;
+}
+
+.votazioni a{
+  text-align: center; 
+  text-decoration: none;
+  padding: 0;
+}
+
+.preferito{
+  font-size: 1em;
+  position: absolute;
+    bottom: 10%;
+    margin-left: 1em;
+}
+
+.preferito a:link{
+  background-color: #ffffa0;
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5em;
+  border-style: outset;
+  color: black;
+}
+
+.preferito a:hover{
+  background-color: #fac100;
+}
+
+#pagina-amministratore{
+  margin: 0.5em;
+}
+
+#pagina-amministratore h1{
+  margin-bottom: 0.2em;
+}
+
+#pagina-amministratore h2{
+  margin-top: 0.2em;
+  margin-bottom: 0.3em;
+}
+
+.parte-segnalazioni{
+  margin-top: 2em;
+}
+
+#descrizione-tabella-segnalazioni{
+  font-size: 0.7em;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+/*  Tabella dei commenti segnalati */
+
+#tabella-segnalazioni{  
+    border-collapse: collapse;
+    width: 97%;
+}
+
+#tabella-segnalazioni tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+#tabella-segnalazioni tr:hover{
+  background-color: #ddd;
+}
+
+#tabella-segnalazioni th {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  text-align: left;
+  background-color: #2f4858;
+  color: white;
+  font-size: 0.75em;
+  text-align: center;
+}
+
+#tabella-segnalazioni td{
+    border: 0.01em solid #ddd; 
+    padding: 0.1em;
+    font-size: 0.75em;
+    word-break: break-all;
+}
+
+.nome-utente{ 
+  width: 7em;
+  font-weight: 500;
+  font-size: 0.5em;
+}
+
+.tipo-segnalazione{ 
+  width: 19em;
+  color: #ac0000;
+  font-size: 0.5em;
+}
+
+.spazio-eliminazione{
+  width: 1.5em;
+}
+.spazio-spunta{
+  width: 1em;
+}
+
+.spazio-spunta a{
+  display: block;
+  margin-left: 1.5em;
+  margin-right: auto;
+}
+
+.elimina-commento{
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#messaggi{
+  max-width: 100%;
+  margin-top: 2em;
+}
+
+#descrizione-tabella-messaggi{
+  font-size: 0.7em;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+/*    Tabella dei messaggi ricevuti     */
+
+#tabella-messaggi{  
+
+    border-collapse: collapse;
+    width: 97%;
+}
+
+
+#tabella-messaggi th {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  text-align: left;
+  background-color: #2f4858;
+  color: white;
+  font-size: 0.75em;
+  text-align: center;
+}
+
+
+#tabella-messaggi td{
+    border: 1px solid #ddd; 
+    padding: 8px;
+    font-size: 0.75em;
+    word-break: break-all;
+}
+
+#tabella-messaggi tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+#tabella-messaggi tr:hover{
+  background-color: #ddd;
+}
+  
+.messaggio-inviato{ 
+  width: 19em;
+  font-size: 0.8em;
+}
+
+.pagina-FAQ {
+  margin: 0.5em;
+  font-family: 'Roboto';  
+}
+
+#descrizione-FAQ h1 {
+  font-size: 1.6em;
+  font-weight: 500;
+  margin-bottom: 0;
+} 
+
+#descrizione-FAQ strong{
+  color: #ac0000;
+}
+
+#descrizione-FAQ h2 {
+  font-size: 1em;
+  font-weight: 300;
+  margin-top: 0.7em;
+  margin-bottom: 2em;
+  margin-left: 1em;
+}
+
+/* Lista delle domande e delle risposte */
+
+#lista-domande-risposte h1 {
+  margin-top: 1em;
+}
+
+.titolo-domanda {
+  font-size: 1em;
+  font-weight: 500;
+  margin-bottom: 0; 
+}
+
+.risposta {
+  font-size: 0.9em;
+  font-weight: 300;
+  margin-top: 0.5em;
+  margin-left: 1em;
+}
+
+.immagine-faq{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.immagine-faq img{
+  display: block;
+    margin: 0 auto;
+  max-width: 50%;
+  max-height: 100%;
+}
+
+.caption-immagine{
+  font-size: 0em;
+}
+.risposta strong{
+  font-size: 1em;
+  font-weight: lighter;
+}
+
+.tabella .messaggi{ 
+    border-collapse: collapse;
+    width: 94%; 
+    margin-left: 3%;
+    margin-bottom: 1em;           
+}
+/* Header della tabella dei messaggi */
+
+.tabella .messaggi th {
+  padding-top: 0.6em;
+  padding-bottom: 0.5em;
+  text-align: center;
+  background-color: #2f4858;
+  color: white;
+  font-size: 1em;
+}
+
+/* Contenuti generali presenti nella tabella*/
+.supporto{
+  min-height: 100vh;
+}
+.tabella .messaggi td{
+    border: 1px solid #ddd; 
+    padding: 8px;
+    word-break: break-all;
+}
+
+.tabella .messaggi tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+.tabella .messaggi tr:hover{
+  background-color: #ddd;
+}
+
+.tabella .serie{
+  width: 17%;
+}
+.tabella .segnalazione{
+  width: 70%;
+}
+.tabella .azione{
+  width: 13%;
+}
+
+.tabella .messaggi td{
+  word-break: break-all;
+}
+
+.tabella .messaggi caption {
+margin-bottom: 0.5em;
+}
+
+.iscriviti{
+  margin-left: 1em;
+}
+.post-form-supporto{
+  margin:1.5em;
+}
+
+.profilo{
+  margin-left: 1em;
+  margin-top: 1em;
+  height: 95vh;
+}
+
+.profilo > div{
+  text-align: center;
+}
+
+.profilo ul{
+  padding-right: 1em;
+  padding-top: 1em;
+  list-style: none;
+}
+
+.profilo li{
+  padding-bottom: 1em;
+}
+
+.profilo img{
+    width: 7em;
+    border-style: ridge;
+    border-radius: 2em;
+}
+
+.border {
+  list-style: none;
+  padding: 0;
+}
+.border li {
+  padding: 1% 2%;
+  margin-bottom: 2%;
+  border-radius: 5px;
+  border-left: 10px solid #f05d22;
+  box-shadow: 2px -2px 5px 0 rgba(0,0,0,.1),
+  -2px -2px 5px 0 rgba(0,0,0,.1),
+  2px 2px 5px 0 rgba(0,0,0,.1),
+  -2px 2px 5px 0 rgba(0,0,0,.1);
+  font-size: 1.5em;
+  letter-spacing: 2px;
+}
+.border li:nth-child(2){border-color: #8bc63e;}
+.border li:nth-child(3){border-color: #fcba30;}
+.border li:nth-child(4){border-color: #1ccfc9;}
+.border li:nth-child(5){border-color: #493224;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1025px){
+  #esplora section > a:hover{
+    opacity: 0.7;
+  } 
+
+	.nav{
+	  width: 20% ;
+	  height: 100% ;	  
+	  /*background-color: #2f4858;*/
+	  background: #14181c url(../img/background-dark.png) 0 -1px repeat-x;
+	  border-right: 2px solid black;
+	  overflow-y: auto;
+	  /*Test*/
+	  z-index: 999;
+	  display: block;
+	
+	}
+	 .nav ul{
+	  line-height: 2em;
+	  padding-left: 3.5em;
+	}
+	 .nav ul:after {
+	  content: "";
+	  display: block;
+	  height: 1px;
+	  width: 75%;
+	  background: #fac100;
+	  margin-top: 5%;
+	  margin-bottom : 5%;
+	  display: block;
+	}
+	
+	.nav li{
+	  display:block;
+	  text-align: left;
+	}
+	  	
+	.selezionato a{
+	  color: white !important; 
+	  pointer-events: none;
+	  cursor: default; 
+	}  
+	
+	.nav a:active{
+	  color: purple;
+	}
+	
+	.nav a:hover{
+	  color:white;
+	}
+	
+	.nav__logo-container{
+		text-align: center;
+		padding-bottom: 1em;
+		margin-top:8%;
+		top:unset;
+		padding-top:unset;
+		width:unset;
+		height:unset;
+	}
+	/*Serve specificare img? non posso spostare questa regola in -nav__logo-container ?*/
+	.nav__logo-container img{
+		width: 35%;
+		opacity: 0.85;
+	}
+	.nav__icon{
+	  display: none ;
+	}
+	
+	.nav__top-list li {
+		display: block;
+  	}
+	
+	.nav__bottom-list{
+	  display: block ;	
+	}
+	
+	.nav__esplora:before{
+		content: url("../img/nav/explore.png");
+	  	display: inline-block;
+	  	margin-left: -1.3em; /* same as padding-left set on li */
+	  	width: 1.8em; /* same as padding-left set on li */
+	  	vertical-align: middle;
+	}
+	
+	.nav__profilo:before {
+	  	content: url("../img/nav/profile_avatar.png");
+	  	display: inline-block;
+	  	margin-left: -1.3em; /* same as padding-left set on li */
+	  	width: 1.8em; /* same as padding-left set on li */
+	  	vertical-align: middle;	  	
+	}
+	
+	.nav__preferiti:before{
+		content: url("../img/nav/favourites.png");
+	  	display: inline-block;
+	 	margin-left: -1.3em; /* same as padding-left set on li */
+	  	width: 1.8em; /* same as padding-left set on li */
+	  	vertical-align: -5px;	  	
+	}
+	
+	.nav__impostazioni:before{
+		content: url("../img/nav/settings.png");
+	  	display: inline-block;
+	  	margin-left: -1.3em; /* same as padding-left set on li */
+	  	width: 1.8em; /* same as padding-left set on li */
+	  	vertical-align: -6px;
+	  		}
+	
+	.nav__faq:before{
+		content: url("../img/nav/faq.png");
+	  display: inline-block;
+		margin-left: -1.3em; /* same as padding-left set on li */
+		width: 1.8em; /* same as padding-left set on li */
+	  vertical-align: -6px;
+	}
+	
+	.nav__supporto:before{
+		content: url("../img/nav/support.png");
+	  	display: inline-block;
+	  	margin-left: -1.3em; /* same as padding-left set on li */
+	  	width: 1.8em; /* same as padding-left set on li */
+	  	vertical-align: -6px;
+	}
+	
+	.nav__privacy:before{
+		content: url("../img/nav/privacy.png");
+	  	display: inline-block;
+	  	margin-left: -1.3em; /* same as padding-left set on li */
+	  	width: 1.8em; /* same as padding-left set on li */
+	  	vertical-align: -6px;
+	}
+	
+	.nav__about:before{
+		content: url("../img/nav/about.png");
+	  	display: inline-block;
+	  	margin-left: -1.3em; /* same as padding-left set on li */
+	  	width: 1.8em; /* same as padding-left set on li */
+	  	vertical-align: -6px;
+	}
+	
+	.nav__restricted{
+	
+	}
+	
+	
+	.nav__social{
+		background-color: white;
+	}
+
+
+  .page-center{
+    width: 80%;
+    position:absolute;
+    margin-top: 0;
+  }
+
+  #homepage-advice a:hover{
+  color: #999999;
+  }
+
+  .header{  
+    background-attachment: scroll;
+    display: flex;
+  }
+
+  .header:hover{
+    opacity: 0.9;
+  }
+  .login-bar{
+    display: flex;  
+    margin-top: 0em;
+  }
+
+  .white{
+  color: white;
+  display: inline;
+  }
+
+  .link-navigazione, .login-bar label{
+    display: block;
+    color: white
+  }
+  .login-bar label{
+    margin-left: 1em;
+  }
+  .login-bar .path{
+    color: white;
+  }
+  .footer{
+    display: none;
+  }
+
+  #footer-responsive-menu{
+    display: none;
+  }
+
+  #torna-su{
+    display: none;
+  }
+  #pagina-about{
+    margin-bottom: 3em; 
+    font-size: 1.5em; 
+  }
+
+  #pagina-about p{
+    margin-left: 1em;
+  }
+
+  .contenuto-about{
+    font-size: 1.1em;
+  }
+
+  .titolo-about{
+      font-weight: 700;
+      font-size: 1.2em; 
+      color: #333; 
+  }
+
+  .sezione-sviluppatore{
+       display: inline;
+  }
+
+  .descrizione-sviluppatore{
+     font-size: 0.75em;  
+     margin-bottom: 0; 
+     margin-top: 0; 
+  }
+
+  #sviluppatori{
+     margin-bottom: 2em;
+  }
+  .nome-sviluppatore{
+      font-size: 1em; 
+      margin-bottom: 0; 
+      margin-top: 0; 
+  }
+
+  .informazioni-sviluppatore{
+      margin-left: 0.5em;
+      width: 12em; 
+  }
+
+  .informazione-sviluppatore img{
+    max-height: 90%;
+    max-width: 90%;
+  }
+
+  .paragrafo-sviluppatore{
+     width: 12em;
+     height: 12em;
+     margin-left: 1em; 
+     margin-right: 1em; 
+     margin-bottom: 4em;
+  }
+
+  .paragrafo-sviluppatore img{
+      height: 12em;
+      width: 12em;
+      margin-bottom: 0; 
+  }
+
+  #header{
+    overflow: hidden;
+  }
+
+  .preferito{
+    font-size: 1.5em;
+    position: relative;
+    padding: 0;
+     margin: 0;
+  }
+
+  .side-bar{
+    border-left: 1px solid black;
+    position: absolute;
+    right: 0;
+    margin: 0;
+    width: 25%;
+    overflow: auto;
+    display: block;
+  }
+
+  #side-bar__consigli .pollici{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: inline-block;
+    border-style: outset;
+    margin: 1em;
+    width: 25%;
+    background-color: #ffffa0;
+  }
+
+  .votazioni{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .votazioni li{
+    display: inline;
+     float: left;
+  }
+
+  #show-page{
+    width: 75%;
+  }
+  #side-bar__consigli{
+    float: none;
+    text-align: center;
+  }
+  #side-bar__attori{
+    float: none;
+    text-align: center;
+    margin-top: 2em;
+  }
+  #list-attori li{
+  margin-right: 5%;
+  float: none;
+  }
+  #preferito-btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  }
+
+  #descrizione-tabella-segnalazioni{
+    font-size: 1.2em;
+  }
+
+  #descrizione-tabella-messaggi{
+    font-size: 1.2em;
+  }
+
+  #pagina-amministratore{
+    margin: 1em;
+  }
+
+  #tabella-segnalazioni th{
+    font-size: 1.5em;
+  }
+  #tabella-segnalazioni td{ 
+      font-size: 1.4em;
+  }
+  #tabella-messaggi td{
+    font-size: 1.4em;
+  }
+  #tabella-messaggi th{
+    font-size: 1.5em;
+  }
+
+  .pagina-FAQ {
+    margin: 1.8em;  
+  }
+  .immagine-faq img{
+    margin-bottom: 0;
+  }
+
+  .titolo-domanda {
+    font-size: 1.1em;
+  } 
+  .risposta{
+    font-size: 1em;
+  }
+
+  .caption-immagine{
+    font-family: normal;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 0.1em;
+    margin-right: 10.7em;
+    margin-left: 9.7em;
+    margin-bottom: 1.2em;
+  }
+
+  .supporto{
+  height: auto;
+  }
+
+  .profilo img{
+    position: inherit;
+  }
+
+  .profilo ul{
+  padding-top: 0;
+  }
+  .border li:hover {border-left: 10px solid transparent;}
+  .border li:nth-child(1):hover {border-right: 10px solid #f05d22;}
+  .border li:nth-child(2):hover {border-right: 10px solid #8bc63e;}
+  .border li:nth-child(3):hover {border-right: 10px solid #fcba30;}
+  .border li:nth-child(4):hover {border-right: 10px solid #1ccfc9;}
+  .border li:nth-child(5):hover {border-right: 10px solid #493224;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 751px) and (max-width: 1024px){
+  	.nav{
+    	width: 100%;
+		height: 4em;
+		background-color: #2f4858;
+		border-right: 2px solid black;
+		overflow-y: hidden;  
+		display: flex; 
+  	}
+  	.nav__top-list {
+		padding-left: 1.5em !important;	
+	}
+	.nav__bottom-list{
+		display:none;
+ 	}
+  	.nav__social{
+		display:none;
+  	}
+  	.nav__esplora:before{
+   		display: none !important;
+  	}
+  	.nav__profilo:before{
+   		display: none !important;
+  	}
+  	.nav__preferiti:before{
+   		display: none !important;
+  	}
+  	.nav ul:after{
+		display: none;
+   	}	  	
+  	.nav li{
+		display: inline-block;
+		padding-right: 1.5em;  
+  	}
+  .nav__logo-container{
+		text-align: left;
+		padding-top: 0em;	
+		padding-bottom: 0em;
+		width: 4em;
+		height: 4em;
+		margin-top:0;			
+	}
+   .nav__logo-container img{
+		width: 100%; /* Possibile centramento immagine */
+		opacity: 0.85;
+		
+	}	
+	.nav li{
+		display: inline-block;
+		padding-right: 1.5em;  
+  	}
+   .nav__logo-container img{
+		width: 100%; /* Possibile centramento immagine */
+	}	
+  
+  
+  .content{
+    margin-bottom: 3em;
+  }
+
+  .homepage__consigliati{
+    margin-bottom: 3em;
+  }
+  #content__homepage .iscriviti{
+    margin-bottom: 3em;
+  }
+  .header{
+    display: flex;
+    margin-top: 4em;
+    height: 30vh;
+    background-position-y: -3em; 
+    background-attachment: fixed;
+  }
+
+  .login-bar{
+    display: flex;  
+    margin-top: 0em;
+
+  }
+  .non-logged-user a:active{
+    color: white;
+  }
+
+  .link-navigazione, .login-bar label{
+    display: block;
+    color: white;
+  } 
+  .login-bar label{
+    margin-left: 1em;
+  }
+
+  .white{
+  color: white;
+  display: inline;
+  }
+
+  .login-bar .path{
+    color: white;
+  }
+
+    .footer{
+    display: flex;
+    /*background-color: #2f4858;*/
+    background: #14181c url(../img/background-dark.png) 0 -1px repeat-x;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+  }
+
+  .footer__nav{
+      margin: 0 auto;
+  }
+
+  .footer ul{
+      padding-left: 0;  
+  }
+
+  .footer ul :last-child{
+      padding-right: 0;
+  }
+
+  .footer li{
+      display: inline-block;
+      padding-right: 2em;
+  }
+
+  .footer a{
+      color: #aaa;
+  }
+
+  .footer a:hover{
+      color:white;
+  }
+
+  #footer-responsive-menu{
+    display: none;
+  }
+
+  #torna-su{
+    display: none;
+  }
+  .informazioni-sviluppatore h3{
+    width: 17em;
+    margin-bottom: 1em;
+  }
+
+  #pagina-About{ 
+    margin: 2em;
+    font-size: 1.5em;
+  } 
+  #sviluppatori-generale{
+    margin-bottom: 3em;
+  }
+  #sviluppatori ul li:last-child{
+    margin-bottom: 3em;
+  }
+  #login .login__colonna {
+    width: 100%;
+    margin-top: 0;
+  }
+  #login__top .login__colonna:first-of-type{
+  border-right: 0px;
+  }  
+   #signup .signup__colonna {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  #header{
+    overflow: hidden;
+  }
+
+  .preferito{
+    font-size: 1.5em;
+    position: relative;
+    padding: 0;
+     margin: 0;
+  }
+
+  .side-bar{
+    border-left: 1px solid black;
+    position: absolute;
+    right: 0;
+    margin: 0;
+    width: 25%;
+    overflow: auto;
+    display: block;
+  }
+
+  #side-bar__consigli .pollici{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: inline-block;
+    border-style: outset;
+    margin: 1em;
+    width: 25%;
+    background-color: #ffffa0;
+  }
+  .votazioni{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .votazioni li{
+    display: inline;
+     float: left;
+  }
+
+  #show-page{
+    width: 75%;
+  }
+  #side-bar__consigli{
+    float: none;
+    text-align: center;
+  }
+  #side-bar__attori{
+    float: none;
+    text-align: center;
+    margin-top: 2em;
+  }
+  #list-attori li{
+  margin-right: 5%;
+  float: none;
+  }
+  #preferito-btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+  }
+
+  #descrizione-tabella-segnalazioni{
+    font-size: 1.2em;
+  }
+
+  #descrizione-tabella-messaggi{
+    font-size: 1.2em;
+  }
+
+  #pagina-amministratore{
+    margin: 1em;
+  }
+
+  #tabella-segnalazioni th{
+    font-size: 1.5em;
+  }
+  #tabella-segnalazioni td{ 
+      font-size: 1.4em;
+  }
+  #tabella-messaggi td{
+    font-size: 1.4em;
+  }
+  #tabella-messaggi th{
+    font-size: 1.5em;
+  }
+  #pagina-amministratore div:last-child{
+    margin-bottom: 3em;
+  }
+
+  .pagina-FAQ {
+    margin: 1em;  
+  } 
+  .immagine-faq img{
+    margin-bottom: 0;
+  }
+
+  .caption-immagine{
+    font-family: normal;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 1.1em;
+    margin-top: 0.6em;
+    margin-right: 10.7em;
+    margin-left: 9.7em;
+    margin-bottom: 1.7em;
+  }
+
+  .supporto{
+  height: auto;
+  }
+
+  .profilo img{
+    position: inherit;
+  }
+
+  .profilo ul{
+  padding-top: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media print{
+  /*Homepage*/
+  #header, #nav, .homepage__welcome, #footer-responsive-menu, #torna-su, #homepage-advice{
+    display: none;
+  }
+
+  .login-bar{
+    background-color: white;
+    color: black;
+  }
+  .homepage__consigliati{
+    background-color: white;
+  }
+  .homepage__consigliati .show__info, .consigliati__show h2{
+    color: black;
+  }
+
+  /*Esplora*/
+  .elenco-serie img{
+    display: none;
+  }
+
+  #esplora section > a{
+    display: none;
+  }
+
+  /*Supporto*/
+  .post-form-supporto{
+    display: none;
+  }
+
+  /*About*/
+  .paragrafo-sviluppatore img{
+    display: none;
+  }
+}

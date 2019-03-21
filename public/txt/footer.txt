@@ -1,0 +1,114 @@
+	<div class="footer">
+		<div class="footer__nav">
+			<ul class="list_no-style">
+				<li refFaq><a href="faq.php"><abbr title="Frequently Asked Questions">FAQ</abbr></a></li>
+				<li refSupporto><a href="supporto.php" title="Supporto">Supporto</a></li>
+				<li refPrivacy><a href="privacy.php" title="Privacy"><span lang="EN">Privacy</span></a></li>
+				<li refAbout><a href="about.php" title="About">About</a></li>
+				<!-- Amministrazione -->
+			</ul>	
+		</div>
+	</div>
+
+	<div id="footer-responsive-menu">
+		<ul class="list_no-style">
+			<li refEsplora><a href="esplora.php" title="Esplora">Esplora</a></li>
+			<li refProfilo><a href="profilo.php" title="Profilo">Profilo</a></li>
+			<li refPreferiti><a href="preferiti.php" title="Preferiti">Preferiti</a></li>
+			<li refFaq><a href="faq.php"><abbr title="Frequently Asked Questions">FAQ</abbr></a></li>
+			<li refSupporto><a href="supporto.php" title="Supporto">Supporto </a></li>
+			<li refPrivacy><a href="privacy.php" title="Privacy"><span lang="EN">Privacy</span></a></li>
+			<li refAbout><a href="about.php" title="About"><span lang="EN">About</span></a></li>
+			<!-- Amministrazione -->
+		</ul>	
+	</div>
+
+	<div id="torna-su">
+		<a href="#">Torna su</a>
+	</div>
+
+
+
+<script>
+
+<!-- Script -->
+
+function myFunction() {
+    var x = document.getElementById("nav");
+    var y = document.getElementById("nav__top-list");
+    var z = document.getElementById("nav__logo-container");
+
+
+    if (x.className === "nav") {
+        x.className += " responsive";
+        y.className += " responsive";
+        z.className += " responsive";
+    } else {
+        x.className = "nav";
+        y.className = "nav__top-list";
+        z.className = "nav__logo-container";
+    }
+}
+
+//Parte modal
+var modal = document.getElementById('modal-login-social');
+
+function loginSocial(){
+	modal.style.display = "block";
+}
+function closeModal(){
+	modal.style.display = "none";
+}
+//When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+//Parte Stagione->Episodio 
+function episodi(link) { 
+	  if (window.XMLHttpRequest) { 
+	    // code for IE7+, Firefox, Chrome, Opera, Safari 
+	    xmlhttp=new XMLHttpRequest(); 
+	  } else {  // code for IE6, IE5 
+	    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP"); 
+	  } 
+	  xmlhttp.onreadystatechange=function() { 
+	    if (this.readyState==4 && this.status==200) { 
+	      document.getElementById("stagione").innerHTML=this.responseText; 
+	    } 
+	  } 
+	  xmlhttp.open("GET",String(link),true); 
+	  xmlhttp.send(); 
+	} 
+
+//Parte searchBar
+function showResult(str) {
+	  if (str.length==0) {
+	    document.getElementById("risultati-ricerca").innerHTML="";
+	    document.getElementById("risultati-ricerca").style.border="0px";
+	    return;
+	  }
+	  if (window.XMLHttpRequest) {
+	    // code for IE7+, Firefox, Chrome, Opera, Safari
+	    xmlhttp=new XMLHttpRequest();
+	  } else {  // code for IE6, IE5
+	    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	  }
+	  xmlhttp.onreadystatechange=function() {
+	    if (this.readyState==4 && this.status==200) {
+	      document.getElementById("risultati-ricerca").innerHTML=this.responseText;
+	      document.getElementById("risultati-ricerca").style.border="1px solid #A5ACB2";
+	    }
+	  }
+	  xmlhttp.open("GET","../php/livesearch.php?q="+str,true);
+	  xmlhttp.send();
+	}
+	
+
+</script>
+
+</body>
+</html>

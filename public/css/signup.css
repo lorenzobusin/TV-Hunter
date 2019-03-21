@@ -1,0 +1,91 @@
+#signup *{
+  box-sizing: border-box;
+}
+
+/* style the container */
+#signup .signup {
+  padding: 1em 0 2em 0;
+}
+#signup h2{
+	text-align:center;
+}
+
+/* style inputs and link buttons */
+#signup input,
+#signup .btn {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+#signup input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+#signup .fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+#signup .twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+#signup .google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+/* style the submit button */
+#signup input[type=submit] {
+  background-color: #fac100;
+  color: white;
+  cursor: pointer;
+}
+
+/* Two-column layout */
+#signup .signup__colonna {
+  float: left;
+  width: 100%;
+  margin: auto;
+  padding: 0 5%;
+}
+
+/* Clear floats after the columns */
+#signup .signup__riga:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* bottom container */
+#signup .bottom-container {
+  text-align: center;
+  background-color: #1f262d;
+  border-radius: 0px 0px 4px 4px;
+}
+
+#signup .bottom-container a{
+  opacity: 1;
+  color: white;
+  border: none;
+}
+
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 751px) {
+  #signup .signup__colonna {
+    width: 100%;
+    margin-top: 0;
+  }
+}

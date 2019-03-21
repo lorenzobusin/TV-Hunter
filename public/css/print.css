@@ -1,0 +1,36 @@
+@media print{
+	/*Homepage*/
+	#header, #nav, .homepage__welcome, #footer-responsive-menu, #torna-su, #homepage-advice{
+		display: none;
+	}
+
+	.login-bar{
+		background-color: white;
+		color: black;
+	}
+	.homepage__consigliati{
+		background-color: white;
+	}
+	.homepage__consigliati .show__info, .consigliati__show h2{
+		color: black;
+	}
+
+	/*Esplora*/
+	.elenco-serie img{
+		display: none;
+	}
+
+	#esplora section > a{
+		display: none;
+	}
+
+	/*Supporto*/
+	.post-form-supporto{
+		display: none;
+	}
+
+	/*About*/
+	.paragrafo-sviluppatore img{
+		display: none;
+	}
+}

@@ -1,0 +1,57 @@
+.header{  
+  background-attachment: fixed;
+  display: none;
+  background-image: url(../img/peaky_blinders.jpg);
+  background-position: center;
+  background-position-y:-6em; 
+  background-color: #2f4858;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.85;
+  height: 35vh;
+  align-items: center;
+  left: 0;
+  top:0;
+}
+
+
+.header-content{
+  width: 15em;
+  margin: 0 auto;
+}
+
+
+.header h1 {
+  /*font-family: "Times New Roman";  PROVA ROBOTO*/
+  font-size:4em;
+  color: white;
+  position: relative;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 751px) and (max-width: 1024px){
+  /*Header section*/
+  .header{
+    display: flex;
+    margin-top: 4em;
+    height: 30vh;
+    background-position-y: -3em; 
+    background-attachment: fixed;
+  }
+}
+
+@media screen and (min-width: 1025px)
+{  /*Header section*/
+  .header{  
+    background-attachment: scroll;
+    display: flex;
+  }
+
+  .header:hover{
+    opacity: 0.9;
+  }
+}
+
+

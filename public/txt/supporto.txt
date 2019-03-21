@@ -1,0 +1,51 @@
+            <div class="supporto">
+	            <div class="messaggi">
+					<form class="post-form post-form-supporto" action="messaggio_action.php" method="get">					
+						<div class="top">		
+							<span>Invia un messaggio agli amministratori:</span>																												
+							<div class="post-holder">	
+								<div class="textarea-wrap">
+									<textarea placeholder="inserisci il tuo messaggio" title="inserisci il tuo messaggio" name="messaggio" minlength="1" maxlength="256" required></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="submit-post">
+							<input class="submit-post-btn" type="submit" value="Invia"/>
+						</div>	
+					</form>
+					<div class="tabella">
+						<table class="messaggi">
+						 	<caption>Tabella dei messaggi inviati con le relative risposte</caption>
+							<thead>
+								<tr>
+		    						<th scope="col">Messaggio</th>
+		    						<th scope="col">Risposta</th>
+		  						</tr>
+		  					</thead>
+		  					<tbody>
+								<!-- Messaggio -->
+	  						</tbody>
+						</table>
+					</div>
+	        	</div>
+    		    <div class="segnalazioni">
+					<div class="tabella">
+						<table class="messaggi">
+						 	<caption>Tabella delle azioni svolte relative alle segnalazioni effettuate</caption>
+							<thead>															
+								<tr>
+	    							<th scope="col">Serie</th>
+	    							<th scope="col">Post</th>
+	    							<th scope="col">Azione</th>
+	  							</tr>
+							</thead>
+						
+							<!--  Format di tabella da replicare per ogni tipo di segnalazione  -->
+		  					<tbody>		
+		  						<!-- Segnalazione -->				
+		  					</tbody>  						
+						</table>
+					</div>
+	        	</div>
+	        	
+        	</div>

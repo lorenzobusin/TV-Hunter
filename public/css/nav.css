@@ -1,0 +1,349 @@
+/*Nav Bar*/
+
+	/*Navigator section*/
+	.nav{
+    	width: 100%;
+		height: 4em;
+		background-color: #2f4858;
+		border-right: 2px solid black;
+		display: flex; 		
+		margin: 0;
+		padding: 0;
+		position: fixed;
+		overflow: hidden;
+		left: 0;
+		top: 0;
+		background: #14181c url(../img/background-dark.png) 0 -1px repeat-x;
+		/*Test*/
+		z-index: 999;
+		
+  	}
+  	.nav__top-list {
+		padding-left: 1.5em;	
+	}
+	.nav__bottom-list{
+		display:none;
+ 	}
+  	.nav__social{
+		display:none;
+  	}
+  	.nav__esplora:before{
+   		display: none ;
+  	}
+  	.nav__profilo:before{
+   		display: none ;
+  	}
+  	.nav__preferiti:before{
+   		display: none ;
+  	}
+  	.nav ul:after{
+		display: none;
+   	}	  	
+  	.nav li{
+		display: inline-block;
+		padding-right: 1.5em;  
+  	}
+  .nav__logo-container{
+		text-align: left;
+		padding-top: 0em;	
+		padding-bottom: 0em;
+		width: 4em;
+		height: 4em;
+		margin-top:0;			
+	}
+   .nav__logo-container img{
+		width: 100%; /* Possibile centramento immagine */
+		opacity: 0.85;
+		
+	}	
+	
+
+
+
+	  /*Navigator section**/
+	.nav__top-list li {
+		display: none;
+  	}
+ 	.nav__icon {
+		float: right;
+		display: block;
+		position:absolute;
+		right:2em;
+		height: 100%;
+		margin-top:1.25em; 
+  	}
+  	.nav.responsive{
+		height: auto;
+  	}
+	.nav__top-list.responsive {
+		position: relative;
+		margin-top:0.74em; 
+	}
+   	.nav__top-list.responsive  .nav__icon {
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	    display: block;
+  	}
+  	.nav__top-list.responsive li {
+	    float: none;
+	    display: block;
+	    text-align: left;   
+	}	  
+   
+   .nav__logo-container{
+   		top:0;
+	}
+	.nav__logo-container.responsive{
+	display:none;
+	}	
+
+	.nav a{
+	  color: #aaa;
+	}
+	
+		.nav__ricerca{                                                      
+	  display: flex ;
+	  justify-content: center;
+	  align-items: center; 
+	  text-align: left; 
+	  background: white;
+	  margin: 20px;
+	  border: 1px;
+	  border-radius: 25px; 
+	}
+	
+	.nav__ricerca input{
+	  width: 78%; 
+	  height: 1.8em;
+	  border: none;
+	  border-radius: 25px;
+	  margin: 0;
+	  outline: none; 
+	  box-shadow: none;    
+	  background: transparent;
+	  float: left;
+	}
+	
+	.nav__ricerca button {
+	  float: right;
+	  width: 20%;
+	  height: 1.5em;
+	  border: none;
+	   background: transparent;  
+	   padding: 0;
+	     margin-top: 3px;
+	   
+	}
+	.nav__ricerca .icon-search{
+		content: url("../img/nav/search.png");
+		 height: 100%;
+		
+	}
+	
+
+
+@media screen and (min-width: 1025px){
+	.nav{
+	  width: 20% ;
+	  height: 100% ;	  
+	  /*background-color: #2f4858;*/
+	  background: #14181c url(../img/background-dark.png) 0 -1px repeat-x;
+	  border-right: 2px solid black;
+	  overflow-y: auto;
+	  /*Test*/
+	  z-index: 999;
+	  display: block;
+	
+	}
+	 .nav ul{
+	  line-height: 2em;
+	  padding-left: 3.5em;
+	}
+	 .nav ul:after {
+	  content: "";
+	  display: block;
+	  height: 1px;
+	  width: 75%;
+	  background: #fac100;
+	  margin-top: 5%;
+	  margin-bottom : 5%;
+	  display: block;
+	}
+	
+	.nav li{
+	  display:block;
+	  text-align: left;
+	}
+	  	
+	.selezionato a{
+	  color: white !important; 
+	  pointer-events: none;
+	  cursor: default; 
+	}  
+	
+	.nav a:active{
+	  color: purple;
+	}
+	
+	.nav a:hover{
+	  color:white;
+	}
+	
+	.nav__logo-container{
+		text-align: center;
+		padding-bottom: 1em;
+		margin-top:8%;
+		top:unset;
+		padding-top:unset;
+		width:unset;
+		height:unset;
+	}
+	/*Serve specificare img? non posso spostare questa regola in -nav__logo-container ?*/
+	.nav__logo-container img{
+		width: 35%;
+		opacity: 0.85;
+	}
+	.nav__icon{
+	  display: none ;
+	}
+	
+	.nav__top-list li {
+		display: block;
+  	}
+	
+	.nav__bottom-list{
+	  display: block ;	
+	}
+	
+	.nav__esplora:before{
+		content: url("../img/nav/explore.png");
+	  	display: inline-block;
+	  	margin-left: -1.3em; /* same as padding-left set on li */
+	  	width: 1.8em; /* same as padding-left set on li */
+	  	vertical-align: middle;
+	}
+	
+	.nav__profilo:before {
+	  	content: url("../img/nav/profile_avatar.png");
+	  	display: inline-block;
+	  	margin-left: -1.3em; /* same as padding-left set on li */
+	  	width: 1.8em; /* same as padding-left set on li */
+	  	vertical-align: middle;	  	
+	}
+	
+	.nav__preferiti:before{
+		content: url("../img/nav/favourites.png");
+	  	display: inline-block;
+	 	margin-left: -1.3em; /* same as padding-left set on li */
+	  	width: 1.8em; /* same as padding-left set on li */
+	  	vertical-align: -5px;	  	
+	}
+	
+	.nav__impostazioni:before{
+		content: url("../img/nav/settings.png");
+	  	display: inline-block;
+	  	margin-left: -1.3em; /* same as padding-left set on li */
+	  	width: 1.8em; /* same as padding-left set on li */
+	  	vertical-align: -6px;
+	  		}
+	
+	.nav__faq:before{
+		content: url("../img/nav/faq.png");
+	  display: inline-block;
+		margin-left: -1.3em; /* same as padding-left set on li */
+		width: 1.8em; /* same as padding-left set on li */
+	  vertical-align: -6px;
+	}
+	
+	.nav__supporto:before{
+		content: url("../img/nav/support.png");
+	  	display: inline-block;
+	  	margin-left: -1.3em; /* same as padding-left set on li */
+	  	width: 1.8em; /* same as padding-left set on li */
+	  	vertical-align: -6px;
+	}
+	
+	.nav__privacy:before{
+		content: url("../img/nav/privacy.png");
+	  	display: inline-block;
+	  	margin-left: -1.3em; /* same as padding-left set on li */
+	  	width: 1.8em; /* same as padding-left set on li */
+	  	vertical-align: -6px;
+	}
+	
+	.nav__about:before{
+		content: url("../img/nav/about.png");
+	  	display: inline-block;
+	  	margin-left: -1.3em; /* same as padding-left set on li */
+	  	width: 1.8em; /* same as padding-left set on li */
+	  	vertical-align: -6px;
+	}
+	
+	.nav__restricted{
+	
+	}
+	
+	
+	.nav__social{
+		background-color: white;
+	}
+
+}
+@media screen and (max-width: 1024px)and (min-width: 751px){
+	/*Navigator section*/
+	.nav{
+    	width: 100%;
+		height: 4em;
+		background-color: #2f4858;
+		border-right: 2px solid black;
+		overflow-y: hidden;  
+		display: flex; 
+  	}
+  	.nav__top-list {
+		padding-left: 1.5em !important;	
+	}
+	.nav__bottom-list{
+		display:none;
+ 	}
+  	.nav__social{
+		display:none;
+  	}
+  	.nav__esplora:before{
+   		display: none !important;
+  	}
+  	.nav__profilo:before{
+   		display: none !important;
+  	}
+  	.nav__preferiti:before{
+   		display: none !important;
+  	}
+  	.nav ul:after{
+		display: none;
+   	}	  	
+  	.nav li{
+		display: inline-block;
+		padding-right: 1.5em;  
+  	}
+  .nav__logo-container{
+		text-align: left;
+		padding-top: 0em;	
+		padding-bottom: 0em;
+		width: 4em;
+		height: 4em;
+		margin-top:0;			
+	}
+   .nav__logo-container img{
+		width: 100%; /* Possibile centramento immagine */
+		opacity: 0.85;
+		
+	}	
+	.nav li{
+		display: inline-block;
+		padding-right: 1.5em;  
+  	}
+   .nav__logo-container img{
+		width: 100%; /* Possibile centramento immagine */
+	}	
+	
+}

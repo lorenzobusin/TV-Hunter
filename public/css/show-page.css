@@ -1,0 +1,503 @@
+/*Page center*/
+
+ .jsonly{
+	display: none !important;
+}
+
+/*Header*/
+
+.header-content h1{
+	font-size: 2.5em;
+}
+
+.header-content h2{
+	color: #161616;
+	padding: 3px;
+	margin-top: 0.5em;
+	text-align: center;
+}
+
+.header .text-container{
+	background-color: #fac100;
+	border-radius: 4px;
+}
+
+
+/*Side bar*/
+.side-bar{
+	background-color: #f2f2f2;
+	position: relative;
+	right: 0;
+	margin: 0;
+	border-left: 0 solid black;
+	border-bottom: 1px solid black;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+}
+
+#side-bar__consigli{
+	text-align: center;
+	float: left;
+	margin: 0;
+	padding-top: 1em;
+}
+
+#side-bar__consigli .pollici{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	display: inline-block;
+	border-style: outset;
+	width: 40%;
+	background-color: #ffffa0;
+}
+
+#side-bar__consigli #consiglia{
+	margin-right: 0;
+}
+
+.selected{
+	background-color: #fac100 !important;
+}
+
+#side-bar__consigli #sconsiglia{
+	margin-left: 2%;
+}
+
+#side-bar__consigli .pollici:hover{ /*vale per entrambi i pollici*/
+	background-color: #fac100;
+}
+
+#side-bar__consigli .pollici img{
+	width: 100%;
+}
+
+#side-bar__attori{
+	text-align: center;
+	margin: auto;
+	float: right;
+	width: 50%;
+}
+
+#side-bar__attori h2{
+	font-size: 1.5em;
+}
+
+#list-attori{
+	padding: 0;
+}
+
+#list-attori li{
+	margin-right: 5%;
+}
+
+.attore-min img{
+	padding-bottom: 0;
+	height: 135px; 
+	border: 1px solid black;
+}
+
+.side-bar .attore-info p{
+	margin-top: 0;
+}
+
+.side-bar .attore-info .nome-personaggio{
+	margin-bottom: 0;
+}
+
+.side-bar .attore-info .nome-attore{
+	font-size: 1em;
+	padding: 0;
+}
+
+.side-bar .attore-info .nome-attore a{
+	padding: 0;
+}
+
+/*actual show page*/
+
+#show-page{ 
+	width: 100%;
+	margin-right: 12em;
+}
+
+
+#show-page .show-info{
+	padding: 1em;
+	border-bottom: 1px solid #fac100;
+	background-color: #f2f2f2;
+}
+
+#show-page .show-descrizione{
+	margin:0;
+	padding: 0;
+	text-align: left;
+}
+
+#show-page .show-seasons{
+	margin-left: 1em;
+}
+
+#show-page .show-seasons h2{
+	color: black;
+}
+
+.selettore-stagione {
+    background-color: #fac100;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1em;
+    margin-left: 2em;
+}
+
+.dropdown__stagioni {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown__stagioni a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown__stagioni a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown__stagioni {
+    display: block;
+}
+
+.dropdown:hover .selettore-stagione {
+    background-color: #edb700;
+}
+
+#stagione{
+	text-align: center;
+	margin:auto;
+}
+
+#stagione th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #fac100;
+    color: black;
+}
+
+#stagione tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+
+#stagione tr:hover {
+	background-color: #ddd;
+}
+
+#stagione td a{
+	color: black;
+}
+
+.post-section{
+	border: 2px solid #fac100;
+	border-radius: 4px;
+	margin: 1em;
+	margin-top: 5em;
+}
+
+.post-section h2{
+	color: black;
+	margin: 5px;
+}
+
+.post-form{
+	margin: 10px;
+}
+
+.post-form .top{
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.post-holder{
+	border-radius: 4px 4px 0 0;
+	position: relative;
+	background: #fff;
+	border: 1px solid #ccc;
+	padding: 5px;
+	margin-left: 0;
+}
+
+.textarea-wrap{
+	display: block;
+	text-align: left;
+}
+
+.post-form textarea{
+	overflow: hidden;
+	height: 40px;
+	background: 0 0;
+	border: none;
+	outline: 0;
+	font-size: 14px;
+	color: #555;
+	width: 100%;
+	padding: 5px;
+	max-width: 98%;
+}
+
+.submit-post{
+	text-align: right;
+	position: relative;
+	margin-top: 0.5em;
+}
+
+.submit-post-btn{
+	color: black;
+	text-transform: uppercase;
+	border-radius: 4px;
+	text-align: center;
+	height: 35px;
+	line-height: 37px;
+	background-color: #fac100;
+	font-size: 17px;
+	padding: 0 25px;
+	border: none;
+	opacity: 0.9;
+}
+
+.submit-post-btn:hover{
+	opacity: 1;
+}
+
+.post{
+	border: 1px solid #aaa;
+	margin: 10px;
+}
+
+.post-header{
+	border-bottom: 1px solid #aaa;
+	margin: 5px;
+}
+
+.clear{
+	clear:both;
+}
+
+.post-header .autore{
+	float: left;
+	display: block;
+	width: 50%;
+}
+
+.post-header .segnala{
+	float: left;
+	display: block;
+	width: 50%;
+	text-align: right;
+}
+
+.post-body{
+	margin: 5px;
+}
+
+.votazioni{
+  margin: 1em;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+.votazioni h1{
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.votazioni ul{
+  margin: 0;
+}
+
+.votazioni li{
+  font-size: 1.5em;
+  background-color: #ffffa0;
+  width: 20%;
+}
+
+.votazioni li:hover{
+  background-color: #fac100;
+  border-bottom: 0.3em solid #FF831C;
+}
+
+.votazioni a{
+  text-align: center; 
+  text-decoration: none;
+  padding: 0;
+}
+
+.preferito{
+	font-size: 1em;
+	position: absolute;
+    bottom: 10%;
+    margin-left: 1em;
+}
+
+.preferito a:link{
+  background-color: #ffffa0;
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5em;
+  border-style: outset;
+  color: black;
+}
+
+.preferito a:hover{
+	background-color: #fac100;
+}
+
+
+
+@media screen and (min-width: 1025px){
+	/*Side bar*/
+	#header{
+		overflow: hidden;
+	}
+
+	.preferito{
+		font-size: 1.5em;
+		position: relative;
+		padding: 0;
+	 	 margin: 0;
+	}
+
+	.side-bar{
+		border-left: 1px solid black;
+		position: absolute;
+		right: 0;
+		margin: 0;
+		width: 25%;
+		overflow: auto;
+		display: block;
+	}
+
+	#side-bar__consigli .pollici{
+		margin-top: 1em;
+		margin-bottom: 1em;
+		display: inline-block;
+		border-style: outset;
+		margin: 1em;
+		width: 25%;
+		background-color: #ffffa0;
+	}
+
+	.votazioni{
+	  margin-left: 0;
+	  margin-right: 0;
+	}
+	.votazioni li{
+	  display: inline;
+	   float: left;
+	}
+
+	#show-page{
+		width: 75%;
+	}
+	#side-bar__consigli{
+		float: none;
+		text-align: center;
+	}
+	#side-bar__attori{
+		float: none;
+		text-align: center;
+		margin-top: 2em;
+	}
+	#list-attori li{
+	margin-right: 5%;
+	float: none;
+	}
+	#preferito-btn{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	}
+
+}
+
+@media screen and (min-width: 751px) and (max-width: 1024px){
+		/*Side bar*/
+	#header{
+		overflow: hidden;
+	}
+
+	.preferito{
+		font-size: 1.5em;
+		position: relative;
+		padding: 0;
+	 	 margin: 0;
+	}
+
+	.side-bar{
+		border-left: 1px solid black;
+		position: absolute;
+		right: 0;
+		margin: 0;
+		width: 25%;
+		overflow: auto;
+		display: block;
+	}
+
+	#side-bar__consigli .pollici{
+		margin-top: 1em;
+		margin-bottom: 1em;
+		display: inline-block;
+		border-style: outset;
+		margin: 1em;
+		width: 25%;
+		background-color: #ffffa0;
+	}
+	.votazioni{
+	  margin-left: 0;
+	  margin-right: 0;
+	}
+
+	.votazioni li{
+	  display: inline;
+	   float: left;
+	}
+
+	#show-page{
+		width: 75%;
+	}
+	#side-bar__consigli{
+		float: none;
+		text-align: center;
+	}
+	#side-bar__attori{
+		float: none;
+		text-align: center;
+		margin-top: 2em;
+	}
+	#list-attori li{
+	margin-right: 5%;
+	float: none;
+	}
+	#preferito-btn{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-top: 1em;
+	}
+
+}

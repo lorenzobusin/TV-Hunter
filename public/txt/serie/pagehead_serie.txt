@@ -1,0 +1,11 @@
+			<div class="header-content title">
+				<h1><!-- Titolo --></h1>
+				<div class="text-container">
+					<h2>Voto medio: <span> <!-- Voto -->/5 </span></h2>
+				</div>	 
+			</div>
+			<script>
+                document.getElementById("header").style.backgroundImage = "url(<--! Url_Back -->)";
+            </script>
+			
+			

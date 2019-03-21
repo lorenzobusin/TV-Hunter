@@ -1,0 +1,32 @@
+				
+		<div id="signup__top" class="signup">
+		  <form action="signup_action.php" name="form_signup" onsubmit="return validateFormSignup()">
+		      <div class="signup__riga">
+		        <div class="signup__colonna" id="div_errore">
+					<!-- Errore -->
+                </div>
+		      
+		        <h2>Registrati</h2>
+		        <div class="signup__colonna">
+		          <input type="text" name="username" title="Nome utente: deve contenere almeno 4 caratteri" placeholder="Nome utente" pattern="[A-Za-z0-9]{4,30}" required/>
+		          <input type="password" name="password" title="Password : Deve contenere almeno 8 caratteri, un numero, una lettera maiuscola e una minuscola" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}" required/>
+		          <input type="email" name="email" title="email" placeholder="example@gmail.com" required pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
+		          <input type="text" name="nome" title="nome" placeholder="Nome" pattern="[A-Za-z0-9]{1,30}" required/>
+		          <input type="text" name="cognome" title="cognome" placeholder="Cognome" pattern="[A-Za-z0-9]{1,30}" required/>
+		          <input type="date" name="datanascita" title="data di nascita" required/>                  
+		          <input type="submit" value="Invia"/>
+		        </div>
+		      </div>
+		  </form>
+		</div>
+    
+            <div class="bottom-container">
+              <div class="signup__riga">
+                <div class="signup__colonna">
+                  <a href="login.php" class="btn">Accedi</a>
+                </div>
+                <div class="signup__colonna">
+                  <a href="#" class="btn"><span lang="EN">Password</span> dimenticata?</a>
+                </div>
+              </div>
+            </div> 

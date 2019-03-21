@@ -1,0 +1,84 @@
+  /*Esplora section*/
+
+  
+
+  .titolo-genere{
+    padding-left: 1em; 
+    float: left;
+    margin-top: 1em;
+  }
+
+  #esplora section > a{
+    margin-right: 0.7em;
+    margin-top: 1.3em;
+    float: right;
+    font-size: 0.8em;
+    color: blue;
+  }
+  
+  .elenco-serie{
+    clear: both;
+  }
+
+  #esplora ul{
+    overflow: hidden; /*per funzionare deve essere settata una altezza*/
+    height: 354px;  /*Vanno bene i pixel? magari usare vh o %*/ 
+    clear: both;
+  }
+
+
+  .elenco-serie li{
+    overflow: hidden; 
+    padding-left: 0.5em;
+  }
+
+  .elenco-serie li:first-child{
+      padding-left: 0em;
+  }
+
+  .elenco-serie li:last-child{
+    margin-bottom: 4em;
+  }
+
+  .elenco-serie .show-min a{
+    padding-bottom: 1px; /*is px okay?*/
+  }
+
+  .elenco-serie img{
+    transition: all .3s ease-in-out;
+  }
+
+  .elenco-serie img:hover{
+    /*opacity: 0.9;*/
+    transform: scale(1.16);
+  }
+
+  .elenco-serie .show-info{
+    padding-left: 8px;
+  }
+
+  .elenco-serie .show-name{
+    margin-top: 0;
+    margin-bottom:5px; /*is px okay? plus, aggiungere lo stile per i link già cliccati*/ 
+  }
+
+  .elenco-serie .show-name a{
+    padding: 0;
+    color: black;
+  }
+
+  .elenco-serie .show-consigliati{
+    font-size: small;
+    margin:0;
+  }
+
+@media screen and (min-width: 1025px){
+  #esplora section > a:hover{
+    opacity: 0.7;
+  } 
+}
+
+
+
+@media screen and (min-width: 751px) and (max-width: 1024px){
+}

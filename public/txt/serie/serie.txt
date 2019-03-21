@@ -1,0 +1,58 @@
+				<!-- Mi serve un contenitore per le informazioni della serie -->
+				<div class="show-info">
+					<p class="show-descrizione">
+						<!-- Descrizione -->
+					</p>
+				</div>
+
+				<div class="show-seasons">
+					<h2>Episodi</h2>
+						<div class="dropdown jsonly" id="dropdownJSSerie">
+						  <button class="selettore-stagione" title="seleleziona stagione">Stagione</button>
+						  <div class="dropdown__stagioni">
+							<!-- Stagione -->
+						  </div>
+						</div>
+					<noscript>
+						<div class="dropdown">
+						  <button class="selettore-stagione">Stagione</button>
+						  <div class="dropdown__stagioni">
+							<!-- StagioneNS -->
+						  </div>
+						</div> 
+					</noscript>
+
+					<table id="stagione" title="episodi">
+					<thead>
+						<tr>
+							<th scope="col">Numero Episodio</th>
+							<th scope="col">Nome Episodio</th>
+							<th scope="col">Data Rilascio</th>
+							<th scope="col">Visto</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- Episodio -->
+					</tbody>
+					</table>
+				</div>
+			
+				<div class="post-section">
+					<h2>Post</h2>
+					
+					<form class="post-form" action="commento_action.php" method="get">					
+						<div class="top">						
+							<div class="post-holder">							
+								<div class="textarea-wrap">
+									<textarea placeholder="inserisci il tuo commento" title="inserisci il tuo commento" name="post"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="submit-post">
+							<input class="submit-post-btn" type="submit" value="Invia"/>
+						</div>	
+					</form>
+
+					<!-- Post -->
+					
+				</div>

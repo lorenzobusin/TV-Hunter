@@ -1,0 +1,36 @@
+<body>
+	<div class="nav" id="nav">
+		<div class="nav__logo-container" id="nav__logo-container">
+			<a href="refHome" title="Homepage"> 
+				<img src="../logo/logo_TVhunter.png" alt="logo del sito, riporta alla homepage"/>		
+			</a>
+		</div>
+		
+		<div class="nav__ricerca">
+			<form action="genere.php">
+				<input type="text" title="barra di ricerca" name="spazio_ricerca" placeholder="Cerca una serie TV" onkeyup="showResult(this.value)"/>
+				<button type="submit" title="cerca"><i class="icon-search"></i></button>
+			</form>
+		</div>
+		
+		<ul class="nav__top-list list_no-style	" id="nav__top-list">
+			<li class="nav__esplora refEsplora"><a href="esplora.php" title="Esplora">Esplora</a></li>
+			<li class="nav__restricted nav__profilo refProfilo"><a href="profilo.php" title="Profilo">Profilo</a></li>
+			<li class="nav__restricted nav__preferiti refPreferiti"><a href="preferiti.php" title="Preferiti">Preferiti</a></li>
+		</ul>
+
+		<ul class="nav__bottom-list list_no-style">
+			<li class="nav__faq refFaq"><a href="faq.php"><abbr title="Frequently Asked Questions">FAQ</abbr></a></li>
+			<li class="nav__supporto refSupporto"><a href="supporto.php" title="Supporto">Supporto </a></li>
+			<li class="nav__privacy refPrivacy"><a href="privacy.php" title="Privacy"><span lang="EN">Privacy</span></a></li>
+			<li class="nav__about refAbout"><a href="about.php" title="About"><span lang="EN">About</span></a></li>
+   			<!-- Amministrazione -->
+   		</ul>
+
+		<div class="nav__social">
+		</div>
+		<div class="nav__icon">
+			<a href="#footer-responsive-menu">Menu</a> <!-- TODO: aggiungere pulsante icons -->
+		</div>
+
+	</div>

@@ -1,0 +1,38 @@
+				<div id="side-bar__consigli">
+					<span>Consigliata dal <!-- Percentuale_Consigliati -->% degli utenti</span>
+					<div>
+	           			<div class="pollici Cons_Color">
+							<a href="<!-- Consigliato -->" title="consiglia la serie"><img id="like" src="../img/consigliati/like.png" alt="Consiglia" /></a>
+						</div>
+						<div class="pollici Scons_Color">			
+							<a href="<!-- Sconsigliato -->" title="sconsiglia la serie"><img id="dislike" src="../img/consigliati/dislike.png" alt="Sconsiglia"/></a>
+						</div>
+					</div>
+				</div>
+
+				
+
+				<div class="votazioni">
+					<h1>Vota la serie</h1>
+					<div class="valori">
+						<ul class="list_no-style">
+							<li voto1_Color><a href="<!-- Voto1 -->" title="Voto 1" >1</a></li>
+							<li voto2_Color><a href="<!-- Voto2 -->" title="Voto 2" >2</a></li>
+							<li voto3_Color><a href="<!-- Voto3 -->" title="Voto 3" >3</a></li>
+							<li voto4_Color><a href="<!-- Voto4 -->" title="Voto 4" >4</a></li>
+							<li voto5_Color><a href="<!-- Voto5 -->" title="Voto 5" >5</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div id="preferito-btn" class="preferito">
+						<a href="<!-- Add_Preferitio -->" title="<!-- Add-Rem -->"><!-- Add-Rem --></a>
+				</div>
+
+				<div id="side-bar__attori">
+					<h2>Attori</h2>
+					<ul class="list_no-style list-inline" id="list-attori">
+						<!-- Attore -->
+					</ul>
+				</div>
+				

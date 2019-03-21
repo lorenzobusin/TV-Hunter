@@ -1,0 +1,12 @@
+						<li class="show">
+							<div class="show-min">
+								<a href="<!-- Url_Show -->" title="vai alla pagina della serie">
+									<img src="<!-- Immagine -->" alt="poster della serie"/>
+								</a>
+							</div>
+							<div class="show-info">
+								<p class="show-name">
+									<a href="<!-- Url_Show -->"><!-- Titolo --></a></p>
+								<p class="show-consigliati">consigliato da <!-- Consigliato --> utenti</p>
+							</div>
+						</li>

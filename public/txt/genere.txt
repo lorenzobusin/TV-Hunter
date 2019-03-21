@@ -1,0 +1,8 @@
+				<section>
+					<h2 class="titolo-genere"><!-- Genere_Titolo --></h2> 
+					<!-- Mostra_Tutto_Genere -->
+					<!--Elenco delle nuove uscite in miniatura-->
+					<ul class="list-inline list_no-style elenco-serie">
+					<!-- Show -->
+					</ul>
+				</section>

@@ -1,0 +1,103 @@
+.footer{
+  	display: none;
+}
+
+#footer-responsive-menu{
+/*height: 90vh;*/
+width: 100%;
+background: #14181c url("../img/background-dark.png") 0 -1px repeat-x;
+margin: 0;
+display: flex;
+}
+
+#footer-responsive-menu ul{
+  margin: auto;
+  padding: 0; 
+  line-height: 3;
+  text-align: center;
+}
+
+#footer-responsive-menu ul a{
+  font-size: 1.5em;
+  color: #aaa;
+}
+
+#torna-su{
+  display: block;
+  background: url("../img/background-dark.png") 0 -300px repeat-x;
+
+}
+
+#torna-su  a{
+  font-size: 1.5em;
+  color: #aaa;
+  position: relative;
+  left: 0.7em;
+  bottom: 0;
+}
+
+
+@media screen and (min-width: 751px) and (max-width: 1024px){
+  /*Footer section*/
+  .footer{
+    display: flex;
+    /*background-color: #2f4858;*/
+    background: #14181c url(../img/background-dark.png) 0 -1px repeat-x;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+  }
+
+  .footer__nav{
+      margin: 0 auto;
+  }
+
+  .footer ul{
+      padding-left: 0;  
+  }
+
+    /*Evito che l'ultimo elemento dell'elenco abbia il padding a dx*/
+  .footer ul :last-child{
+      padding-right: 0;
+  }
+
+  .footer li{
+      display: inline-block;
+      padding-right: 2em;
+  }
+
+  .footer a{
+      color: #aaa;
+  }
+
+  .footer a:hover{
+      color:white;
+  }
+
+  #footer-responsive-menu{
+    display: none;
+  }
+
+  #torna-su{
+    display: none;
+  }
+
+}
+
+
+@media screen and (min-width: 1025px){
+  /*Footer*/
+  .footer{
+    display: none;
+  }
+
+  #footer-responsive-menu{
+    display: none;
+  }
+
+  #torna-su{
+    display: none;
+  }
+}
+

@@ -1,0 +1,24 @@
+
+
+
+			<!-- contenuto effettivo della pagina -->
+			<div id="content__homepage">
+				<div class="homepage__welcome">
+					<h2 class="welcome__text">
+						Il social delle serie TV che stavi aspettando
+					</h2>
+				</div>
+
+				<div class="homepage__consigliati">
+					<h3 id="homepage-advice">
+						<a href="#first-show-anchor">Dai un'occhiata ai titoli del momento</a>
+					</h3>
+					
+					<!-- Titoli_Momento -->
+
+				</div>
+
+			<!-- Registrati -->
+
+			</div>
+

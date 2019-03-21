@@ -1,0 +1,8 @@
+						<li>
+							<div class="attore-min">
+								<img src="<!-- Immagine -->" alt="foto dell'attore"/> 
+							</div>
+							<div class="attore-info">
+								<p class="nome-attore"><a><!-- Nome_Cognome_Attore --></a></p>
+							</div>
+						</li>

@@ -1,0 +1,41 @@
+\BOOKMARK [1][-]{section.1}{Introduzione}{}% 1
+\BOOKMARK [1][-]{section.2}{Progettazione}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Studio dell'utenza finale}{section.2}% 3
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Utente generico}{subsection.2.1}% 4
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Amministratore}{subsection.2.1}% 5
+\BOOKMARK [2][-]{subsection.2.2}{Layout del sito}{section.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Barra di navigazione}{subsection.2.2}% 7
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Barra informativa}{subsection.2.2}% 8
+\BOOKMARK [3][-]{subsubsection.2.2.3}{Contenuti statici}{subsection.2.2}% 9
+\BOOKMARK [4][-]{paragraph.2.2.3.1}{About}{subsubsection.2.2.3}% 10
+\BOOKMARK [4][-]{paragraph.2.2.3.2}{Contenuti dinamici}{subsubsection.2.2.3}% 11
+\BOOKMARK [5][-]{subparagraph.2.2.3.2.1}{Preferiti}{paragraph.2.2.3.2}% 12
+\BOOKMARK [5][-]{subparagraph.2.2.3.2.2}{Esplora}{paragraph.2.2.3.2}% 13
+\BOOKMARK [5][-]{subparagraph.2.2.3.2.3}{Profilo}{paragraph.2.2.3.2}% 14
+\BOOKMARK [5][-]{subparagraph.2.2.3.2.4}{FAQ}{paragraph.2.2.3.2}% 15
+\BOOKMARK [5][-]{subparagraph.2.2.3.2.5}{Privacy}{paragraph.2.2.3.2}% 16
+\BOOKMARK [1][-]{section.3}{Realizzazione}{}% 17
+\BOOKMARK [2][-]{subsection.3.1}{Responsive Design}{section.3}% 18
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Layout di stampa}{subsection.3.1}% 19
+\BOOKMARK [2][-]{subsection.3.2}{Linguaggi e strumenti}{section.3}% 20
+\BOOKMARK [3][-]{subsubsection.3.2.1}{XHTML 1.0 Strict}{subsection.3.2}% 21
+\BOOKMARK [3][-]{subsubsection.3.2.2}{PHP}{subsection.3.2}% 22
+\BOOKMARK [3][-]{subsubsection.3.2.3}{JavaScript}{subsection.3.2}% 23
+\BOOKMARK [3][-]{subsubsection.3.2.4}{Struttura}{subsection.3.2}% 24
+\BOOKMARK [2][-]{subsection.3.3}{Presentazione}{section.3}% 25
+\BOOKMARK [2][-]{subsection.3.4}{Comportamento}{section.3}% 26
+\BOOKMARK [1][-]{section.4}{Validazione}{}% 27
+\BOOKMARK [2][-]{subsection.4.1}{Scelte progetturali}{section.4}% 28
+\BOOKMARK [2][-]{subsection.4.2}{Strumenti automatici}{section.4}% 29
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Markup Validation Service w3.org}{subsection.4.2}% 30
+\BOOKMARK [3][-]{subsubsection.4.2.2}{W3C CSS Validator w3.org}{subsection.4.2}% 31
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Vamol\340}{subsection.4.2}% 32
+\BOOKMARK [3][-]{subsubsection.4.2.4}{TotalValidator}{subsection.4.2}% 33
+\BOOKMARK [3][-]{subsubsection.4.2.5}{WAVE Accessibility Extension}{subsection.4.2}% 34
+\BOOKMARK [3][-]{subsubsection.4.2.6}{ColorSafe}{subsection.4.2}% 35
+\BOOKMARK [2][-]{subsection.4.3}{Test effettuati}{section.4}% 36
+\BOOKMARK [1][-]{section.5}{Suddivisione del lavoro}{}% 37
+\BOOKMARK [2][-]{subsection.5.1}{Francesco Corti}{section.5}% 38
+\BOOKMARK [2][-]{subsection.5.2}{Davide Barasti}{section.5}% 39
+\BOOKMARK [2][-]{subsection.5.3}{Giovanni Sorice}{section.5}% 40
+\BOOKMARK [2][-]{subsection.5.4}{Lorenzo Busin}{section.5}% 41

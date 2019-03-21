@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../css/styleProva.css">
+<style type="text/css">@import url("../css/show-page.css");</style>
+
+
+
+<link rel="icon" type="image/png" href="../img/favicomatic/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="../img/favicomatic/favicon-16x16.png" sizes="16x16" />
+<link rel="stylesheet" href="">
+</head>
+<body>
+	<!-- Sostituire con tag HTML5 <header>? Vedere pro e contro
+		Contro: XHTML5 non esiste -> in xhtml i tag header e footer non esistono.
+
+	-->
+	<div class="nav" id="nav">
+		<div class="nav__logo-container" id="nav__logo-container">
+			<a href=""> 
+				<img src="../logo/logo_TVhunter.png" alt="logo del sito, riporta alla homepage">		
+			</a>
+		</div>
+		
+		<div class="nav__ricerca">
+			<input type="text" placeholder="Cerca..">
+		</div>
+		
+		<ul class="nav__top-list list_no-style	" id="nav__top-list">
+			<li class="nav__esplora"><a href="esplora.html" title="Esplora">Esplora</a></li>
+			<li class="nav__restricted nav__profilo"><a href="" title="Profilo">Profilo</a></li>
+			<li class="nav__restricted nav__preferiti"><a href="" title="Preferiti">Preferiti</a></li>
+		</ul>
+
+		<ul class="nav__bottom-list list_no-style">
+			<li class="nav__restricted nav__impostazioni"><a href="" title="Impostazioni">Impostazioni</a></li>
+			<li class="nav__faq"><a href=""><acronym title="Frequently Asked Questions">FAQ</acronym></a></li>
+			<li class="nav__supporto"><a href="" title="Supporto">Supporto </a></li>
+			<li class="nav__privacy"><a href="" title="Privacy"><span xml:lang="EN">Privacy</span></a></li>
+			<li class="nav__about"><a href="" title="About"><span xml:lang="EN">About</span></a></li>
+   		</ul>
+
+		<div class="nav__social">
+		</div>
+		<div class="nav__icon">
+			<a href="javascript:void(0);" onclick="myFunction()"><i class=""></i>Pulsante</a> <!-- TODO: aggiungere pulsante icons -->
+		</div>
+
+	</div>
+
+	<div class="page-center">
+		<div class="header">
+			<div class="header-content">
+				<h1>Narcos</h1> <!--(esempio) Da sostituire col titolo della serie -->
+				<div class="text-container">
+					<h2>Voto medio: <span> 0/5 </span></h2>
+				</div>	
+			</div>
+		</div>
+
+		<!-- contenuto effettivo della pagina -->
+		<div class="content">
+			<!-- barra di navigazione laterale, mostra gli attori e altro -->
+			<div class="side-bar">
+				<div id="side-bar__consigli">
+					<span>Consigliata dal 50% degli utenti</span>
+					<div class="pollici">
+						<a href="" title="consiglia la serie"><img id="like" src="../img/consigliati/like.png"></a>			
+						<a href="" title="sconsiglia la serie"><img id="dislike" src="../img/consigliati/dislike.png"></a>
+					</div>					
+				</div>
+				<div id="side-bar__attori">
+					<h2>Attori principali</h2>
+					<ul class="list_no-style list-inline" id="list-attori">
+						<li>
+							<div class="attore-min">
+								<a href="">
+									<img src="../img/miniature/attori/wagner-moura_min.jpg" alt="foto dell'attore">
+								</a>
+							</div>
+							<div class="attore-info">
+								<!-- Non disponibile nella versione attuale del DB
+								<p class="nome-personaggio">Pablo Escobar</p>
+								-->
+								<p class="nome-attore"><a>Wagner Moura</a></p>
+							</div>
+						</li>
+
+						<li>
+							<div class="attore-min">
+								<a href="">
+									<img src="../img/miniature/attori/pedro-pascal_min.jpg" alt="foto dell'attore">
+								</a>
+							</div>
+							<div class="attore-info">
+								<!--<p class="nome-personaggio">Javier Pena</p>-->
+								<p class="nome-attore"><a>Pedro Pascal</a></p>
+							</div>
+						</li>
+
+						<li>
+							<div class="attore-min">
+								<a href="">
+									<img src="../img/miniature/attori/boyd-holbrook_min.jpg" alt="foto dell'attore">
+								</a>
+							</div>
+							<div class="attore-info">
+								<!--<p class="nome-personaggio">Steve Murphy</p>-->
+								<p class="nome-attore"><a>Boyd Holbrook</a></p>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+
+			</div>
+
+			<div id="show-page">
+				<!-- Mi serve un contenitore per le informazioni della serie -->
+				<div class="show-info">
+					<p class="show-descrizione">
+						Ambientata nella Colombia di fine anni 70, la storia racconta le avventure del famoso signore della droga Pablo Escobar, dalla sua nascita come spacciatore di città alla sua brutale fine.
+					</p>
+				</div>
+
+				<div class="show-seasons">
+					<h2>Episodi</h2>
+					<div class="dropdown">
+					  <button class="selettore-stagione">Stagione</button>
+					  <div class="dropdown__stagioni">
+					    <a href="#">Stagione 1</a>
+					    <a href="#">Stagione 2</a>
+					    <a href="#">Stagione 3</a>
+					  </div>
+					</div> 
+
+					<table id="stagione">
+						<tr>
+							<th>Numero Episodio</th>
+							<th>Nome Episodio</th>
+							<th>Data Rilascio</th>
+							<th>Visto</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td><a href="">Descenso</a></td>
+							<td>2015-08-28</td>
+							<td>Si</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td><a xml:lang="EN" href="">The sword of Simon</a></td>
+							<td>2015-08-28</td>
+							<td>Si</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td><a href="">The Men of Always</a></td>
+							<td>2015-08-28</td>
+							<td>No</td>
+						</tr>
+					</table>
+				</div>
+			
+				<div class="post-section">
+					<h2>Post</h2>
+
+					<div class="post">
+						<div class="post-header">
+							<p>
+								Autore: Ciro
+							</p>
+						</div>
+						<div class="post-body">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</div>
+					</div>	
+
+					<div class="post">
+						<div class="post-header">
+							<p>
+								Autore: Davide
+							</p>
+						</div>
+						<div class="post-body">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</div>
+					</div>	
+
+					<div class="post">
+						<div class="post-header">
+							<p>
+								Autore: Chicco Corti
+							</p>
+						</div>
+						<div class="post-body">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</div>
+					</div>	
+
+					<div class="post">
+						<div class="post-header">
+							<p>
+								Autore: Lorenso
+							</p>
+						</div>
+						<div class="post-body">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+
+
+
+	</div>
+
+	<div class="footer">
+		<div class="footer__nav">
+			<ul class="list_no-style">
+				<li><a href="">Supporto </a></li>
+				<li><a href=""><span xml:lang="EN">Privacy</span></a></li>
+				<li><a href="">About</a></li>
+			</ul>	
+		</div>
+	</div>
+
+	
+
+<script>
+function myFunction() {
+    var x = document.getElementById("nav");
+    var y = document.getElementById("nav__top-list");
+    var z = document.getElementById("nav__logo-container");
+
+
+    if (x.className === "nav") {
+        x.className += " responsive";
+        y.className += " responsive";
+        z.className += " responsive";
+    } else {
+        x.className = "nav";
+        y.className = "nav__top-list";
+        z.className = "nav__logo-container";
+    }
+}
+</script>
+
+</body>
+</html>
+
+
